@@ -24,3 +24,7 @@ La relance technique livre :
 Le moteur de relance est un **prototype distinct** de Blood Arena 0.30, et non une reproduction 1:1. Ne sont pas encore restaurés : tous les assets des 7 planches, collections, 3 campagnes, neuf modes de jeu et textes détaillés de la 0.30, corrections, animations et source du moteur original. La restauration exacte dépend de la ZIP \`AVP_Blood_Arena_v0_30_Jeu_et_Sources.zip\` ou du HTML brut.
 
 Fan game non officiel. Alien et Predator appartiennent à leurs ayants droit. Ne pas employer de visuels officiels sans droits.
+
+## Archives de l'ensemble des jeux — v0.2
+
+Depuis le dépôt privé Alien_base (pipeline `node scripts/export-blood-arena.mjs`), le jeu public embarque désormais `data/cross-game-references.json` : 158 cartes AVP Hunt/Hive TCG et 129 dossiers d'armes Tantalus **à vérifier**. Le codex filtre séparément les références principales, les cartes TCG et les dossiers de recherche ; aucun de ces imports ne devient automatiquement une unité jouable ou un objet officiellement certifié.

@@ -17,7 +17,7 @@ const FALLBACK={
  bad_blood:{id:'prototype_bad_blood',name:'Chasseur renégat',entityId:'species.yautja',stats:{movement:6,hp:11,strength:4,agility:3,technique:2,armor:1}},
  synthetics:{id:'prototype_synthetic',name:'Unité synthétique',entityId:'character.bishop',stats:{movement:5,hp:11,strength:3,agility:2,technique:5,armor:1}}
 };
-let catalog=null,profiles=null,match=null,selected=null,intent='move',busy=false;
+let catalog=null,profiles=null,crossGame=null,match=null,selected=null,intent='move',busy=false;
 const storeKey='avp-blood-arena-bridge-0.1';
 function safeSave(s){try{localStorage.setItem(storeKey,JSON.stringify(s));}catch(_e){}}
 function safeLoad(){try{const t=JSON.parse(localStorage.getItem(storeKey)||'{}');return {played:Math.max(0,Number(t.played)||0),won:Math.max(0,Number(t.won)||0)};}catch(_e){return {played:0,won:0};}}
@@ -166,21 +166,38 @@ function finish(){
 }
 function showModal(id){byId(id).hidden=false;}
 function hideModal(id){byId(id).hidden=true;}
+function makeCodexEntries(){
+ const primary=catalog.entities.map(e=>({id:e.id,group:'central',type:e.type,name:e.name,note:e.notes||'',context:e.canonScope,origin:e.sourceIds.map(id=>catalog.sources[id]?.title||id).join(', ')}));
+ const tcg=crossGame.cards.map(c=>({id:c.id,group:'tcg',type:c.type.toLowerCase(),name:c.name,note:c.description||c.flavor||'',context:'CARTE DE JEU · '+c.faction+' · '+c.rarity,origin:'AVP Hunt/Hive TCG'+(c.sharedEntityId?' · Lien '+c.sharedEntityId:''),status:'GAMEPLAY NON CANONIQUE'}));
+ const weapons=crossGame.researchWeapons.map(w=>({id:w.id,group:'research',type:'weapon_candidate',name:w.name,note:'Identité ou fidélité non vérifiée. '+(w.medium||''),context:'RESEARCH_ONLY · NON IMPLÉMENTÉ',origin:w.work||'Source à vérifier',status:'CANDIDAT NON CERTIFIÉ'}));
+ return [...primary,...tcg,...weapons];
+}
+function syncCodexTypes(){
+ if(!catalog||!crossGame)return;
+ const group=byId('codexScope').value,entries=makeCodexEntries().filter(e=>group==='all'||e.group===group);
+ const root=byId('codexType');root.replaceChildren();
+ const first=document.createElement('option');first.value='all';first.textContent='TOUTES LES CATÉGORIES';root.append(first);
+ for(const type of [...new Set(entries.map(e=>e.type))].sort()){const option=document.createElement('option');option.value=type;option.textContent=type.toUpperCase().replaceAll('_',' ');root.append(option);}
+ root.value='all';
+}
 function renderCodex(){
- if(!catalog)return;const type=byId('codexType').value,q=byId('codexQuery').value.trim().toLowerCase();
- const list=catalog.entities.filter(e=>(type==='all'||e.type===type)&&([e.name,e.id,e.notes,(e.sourceIds||[]).map(s=>catalog.sources[s]?.title||'').join(' ')].join(' ').toLowerCase().includes(q)));
- byId('codexCount').textContent=list.length+' / '+catalog.entities.length+' fiches · source Alien_base '+catalog.version;
- const root=byId('codexItems');root.replaceChildren();for(const e of list){const card=document.createElement('article'),kind=document.createElement('small'),title=document.createElement('h3'),note=document.createElement('p'),src=document.createElement('p');
- card.className='codex-card';kind.textContent=e.type.toUpperCase()+' · '+e.canonScope;title.textContent=e.name;note.textContent=e.notes||'';src.className='source';src.textContent='SOURCE : '+e.sourceIds.map(id=>catalog.sources[id]?.title||id).join(', ');
- card.append(kind,title,note,src);root.append(card);}
+ if(!catalog||!crossGame)return;
+ const scope=byId('codexScope').value,type=byId('codexType').value,q=byId('codexQuery').value.trim().toLowerCase();
+ const candidate=makeCodexEntries().filter(e=>scope==='all'||e.group===scope);
+ const list=candidate.filter(e=>(type==='all'||e.type===type)&&[e.name,e.id,e.note,e.origin,e.context].join(' ').toLowerCase().includes(q));
+ byId('codexCount').textContent=list.length+' / '+candidate.length+' fiches · Alien_base / imports vérifiables · '+catalog.version;
+ const root=byId('codexItems');root.replaceChildren();
+ for(const e of list){const card=document.createElement('article'),kind=document.createElement('small'),title=document.createElement('h3'),note=document.createElement('p'),src=document.createElement('p');
+ card.className='codex-card';kind.textContent=e.type.toUpperCase().replaceAll('_',' ')+' · '+e.context;title.textContent=e.name;note.textContent=e.note;src.className='source';src.textContent='SOURCE : '+e.origin+(e.status?' · '+e.status:'');card.append(kind,title,note,src);root.append(card);
+ }
 }
 async function boot(){
  try{
- const res=await Promise.all([fetch('./data/alien-base.snapshot.json'),fetch('./data/blood-arena.profiles.json')]);for(const r of res)if(!r.ok)throw Error('HTTP '+r.status);catalog=await res[0].json();profiles=await res[1].json();
- if(!Array.isArray(catalog.entities)||!Array.isArray(profiles.records))throw Error('format inattendu');
- byId('dataStatus').textContent=catalog.entities.length+' entités et '+profiles.records.length+' profils v0.30 partiels';
+ const res=await Promise.all([fetch('./data/alien-base.snapshot.json'),fetch('./data/blood-arena.profiles.json'),fetch('./data/cross-game-references.json')]);for(const r of res)if(!r.ok)throw Error('HTTP '+r.status);catalog=await res[0].json();profiles=await res[1].json();crossGame=await res[2].json();
+ if(!Array.isArray(catalog.entities)||!Array.isArray(profiles.records)||!Array.isArray(crossGame.cards)||!Array.isArray(crossGame.researchWeapons))throw Error('format inattendu');
+ byId('dataStatus').textContent=catalog.entities.length+' références, '+profiles.records.length+' profils v0.30 partiels, '+crossGame.cards.length+' cartes TCG et '+crossGame.researchWeapons.length+' armes à vérifier';
  for(const [key,f] of Object.entries(FACTIONS)){for(const id of ['teamPick','opponentPick']){const opt=document.createElement('option');opt.value=key;opt.textContent=f.name;byId(id).append(opt);}}byId('teamPick').value='uscm';byId('opponentPick').value='hive';
- for(const t of [...new Set(catalog.entities.map(e=>e.type))].sort()){const opt=document.createElement('option');opt.value=t;opt.textContent=t.toUpperCase();byId('codexType').append(opt);}renderCodex();
+ syncCodexTypes();renderCodex();
  }catch(e){byId('dataStatus').textContent='ERREUR DE LECTURE : '+e.message;byId('startButton').disabled=true;msg('Les fichiers de la base sont inaccessibles.');}
  scoreStats();
 }
@@ -192,6 +209,6 @@ byId('endTurn').addEventListener('click',endTurn);
 byId('menuButton').addEventListener('click',()=>{if(!match||match.finished||confirm('Abandonner le match en cours ?')){match=null;selected=null;byId('match').hidden=true;byId('menu').hidden=false;byId('selectionHelp').textContent='Sélectionne ton équipe et lance une rencontre.';}});
 byId('openCodex').addEventListener('click',()=>showModal('codexModal'));byId('closeCodex').addEventListener('click',()=>hideModal('codexModal'));
 byId('openHelp').addEventListener('click',()=>showModal('helpModal'));byId('closeHelp').addEventListener('click',()=>hideModal('helpModal'));
-byId('codexQuery').addEventListener('input',renderCodex);byId('codexType').addEventListener('change',renderCodex);
+byId('codexQuery').addEventListener('input',renderCodex);byId('codexType').addEventListener('change',renderCodex);byId('codexScope').addEventListener('change',()=>{syncCodexTypes();renderCodex();});
 document.addEventListener('keydown',e=>{if(e.key==='Escape'){hideModal('helpModal');hideModal('codexModal');}if(e.key===' '&&match&&!match.finished&&!byId('codexModal').hidden===false){e.preventDefault();endTurn();}});
 boot();
