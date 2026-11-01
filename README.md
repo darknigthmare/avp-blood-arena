@@ -32,3 +32,24 @@ Depuis le dépôt privé Alien_base (pipeline `node scripts/export-blood-arena.m
 ## Correctif de provenance (audit v0.3)
 
 La reconstruction possède 18 profils, **4 directement vérifiés dans les extraits indexés du HTML v0.30** et **14 provisoires**, inventoriés pour maintenir un match jouable. Les valeurs provisoires n'ont pas été présentées comme exactes. Le code affiche « PROFIL PROVISOIRE » pour ces unités. L'archive originale v0.30 doit toujours être restaurée pour tester les modes et la fidélité visuelle.
+
+## Synchronisation Alien_base unifiée (2026-11-01)
+
+Le jeu inclut désormais `data/alien-base.unified-blood.json`, un **snapshot public hors ligne** généré depuis l'exporteur `Alien_base/scripts/export-blood-arena-public.mjs` (PR Alien_base #20, dépendante des PR #8 et #4). Il référence **7 rattachements prudents** à des identités communes et **11 cas sans preuve suffisante** parmi les 18 profils. Les valeurs HP/MOB/ARM et les règles du sport **ne sont pas importées comme statistiques universelles**.
+
+L'interface « SYNCHRO ALIEN_BASE » permet de vérifier chaque rattachement, sa source et les cas à documenter. Lancer `npm test` valide le snapshot, les identifiants et la provenance. Le fichier de la base privée n'est **jamais chargé depuis un navigateur**.
+
+### Restauration de la version historique 0.36
+
+Le fichier `AVP_Blood_Arena_v0_36_JOUABLE.html` (16 545 313 octets, 23 066 lignes) a été **repéré** dans la bibliothèque du projet, mais ses octets complets ne sont pas accessibles depuis cet environnement. Il n'est **pas** intégré au dépôt et ce site reste une relance technique, distincte du jeu historique. Pour une restauration ultérieure depuis une copie locale autorisée et intégrale :
+
+```bash
+node scripts/restore-original.mjs /chemin/AVP_Blood_Arena_v0_36_JOUABLE.html
+npm test
+```
+
+Le script refuse les copies tronquées et produit `play/v0.36/index.html` et une attestation SHA-256. Le répertoire `play/v0.36` ne doit être publié que lorsque l'original intégral a passé les vérifications. Aucune version 0.36 en ligne n'est prétendue par ce dépôt.
+
+### Hébergement
+
+Le projet Vercel existant `avp-blood-arena` est déjà lié au dépôt GitHub sous l'équipe `darknigthmares-projects`. Un lien Git n'est pas un déploiement : seule une build en état `READY` et une vérification du domaine confirmeront une mise en ligne.

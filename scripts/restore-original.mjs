@@ -1,0 +1,21 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import { createHash } from 'node:crypto';
+import { fileURLToPath } from 'node:url';
+const project=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
+const input=process.argv[2];
+if(!input){console.error('Usage: node scripts/restore-original.mjs <AVP_Blood_Arena_v0_36_JOUABLE.html>');process.exit(2)}
+const original=fs.readFileSync(path.resolve(input));
+const expectedBytes=16545313;
+if(original.length!==expectedBytes)throw Error('Incomplete or different v0.36 source: '+original.length+' bytes vs '+expectedBytes);
+const text=original.toString('utf8');
+if(!text.startsWith('<!doctype html>')||!text.includes('<title>AVP · Blood Arena 0.36 — Saison Zéro & Équilibre compétitif</title>')||!text.trimEnd().endsWith('</html>'))throw Error('Unexpected original build or incomplete HTML');
+if(text.includes('\uFFFD'))throw Error('Invalid UTF-8 in source; refusing lossy restore');
+const sha256=createHash('sha256').update(original).digest('hex');
+const lines=text.split(/\r?\n/).length;
+if(lines!==23066)throw Error('Source line count differs from archived metadata: '+lines+' vs 23066');
+const dest=path.join(project,'play','v0.36');
+fs.mkdirSync(dest,{recursive:true});
+fs.writeFileSync(path.join(dest,'index.html'),original);
+fs.writeFileSync(path.join(dest,'provenance.json'),JSON.stringify({version:'0.36',source:path.basename(input),bytes:original.length,lines,sha256,restoredFromFullBytes:true,verifiedAt:new Date().toISOString()},null,2)+'\n');
+console.log('Original 0.36 restored at play/v0.36/index.html; SHA-256 '+sha256);
