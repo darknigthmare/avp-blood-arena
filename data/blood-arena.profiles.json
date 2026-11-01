@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "game": "avp-blood-arena",
   "ruleset": "0.30",
-  "scope": "partial_verified_extract",
-  "totalRecords": 16,
-  "sourceMaterial": "AVP_Blood_Arena_v0_30_JOUABLE.html, extraits indexés disponibles le 1er novembre 2026",
-  "warning": "Extraction partielle. Ne pas confondre statuts déclarés et implémentation effective, ni spécialisations originales et canon officiel.",
+  "scope": "partial_verified_fragments_plus_provisional_reconstruction",
+  "totalRecords": 18,
+  "sourceMaterial": "Extraits HTML v0.30 indexés accessibles ponctuellement, complétés par des profils provisoires explicitement identifiés",
+  "warning": "Seulement 4 profils ont des attributs explicitement relus dans des extraits de la v0.30. Les 14 autres sont des reconstructions non confirmées ; ne pas les présenter comme les statistiques, noms ou statuts officiels de l'ancien jeu.",
   "records": [
     {
       "id": "uscm_recruit",
@@ -28,8 +28,9 @@
       "passiveId": "none",
       "sourceImplementationStatus": "specified_not_implemented",
       "sourceStatusNote": "Statut dans la définition sérialisée ; le runtime v0.30 peut le remplacer. Ne pas en déduire la jouabilité.",
-      "provenance": "indexed_fragment_from_user_blood_arena_v0.30",
-      "ruleset": "blood_arena_v0.30"
+      "provenance": "AVP_Blood_Arena_v0_30_JOUABLE.html_indexed_excerpt",
+      "ruleset": "blood_arena_v0.30",
+      "sourceVerification": "verified_indexed_source_fragment"
     },
     {
       "id": "hive_praetorian",
@@ -52,8 +53,9 @@
       "passiveId": "braced",
       "sourceImplementationStatus": "specified_not_implemented",
       "sourceStatusNote": "Statut dans la définition sérialisée ; le runtime v0.30 peut le remplacer. Ne pas en déduire la jouabilité.",
-      "provenance": "indexed_fragment_from_user_blood_arena_v0.30",
-      "ruleset": "blood_arena_v0.30"
+      "provenance": "AVP_Blood_Arena_v0_30_JOUABLE.html_indexed_excerpt",
+      "ruleset": "blood_arena_v0.30",
+      "sourceVerification": "verified_indexed_source_fragment"
     },
     {
       "id": "hive_gallery",
@@ -75,10 +77,10 @@
         "capture"
       ],
       "passiveId": "stalker",
-      "sourceImplementationStatus": "implemented_v0_18",
-      "sourceStatusNote": "Statut dans la définition sérialisée ; le runtime v0.30 peut le remplacer. Ne pas en déduire la jouabilité.",
-      "provenance": "indexed_fragment_from_user_blood_arena_v0.30",
-      "ruleset": "blood_arena_v0.30"
+      "sourceStatusNote": "Aucun statut original confirmé ; valeurs et capacités provisoires de la reconstruction, jamais une fiche certifiée v0.30.",
+      "provenance": "technical_rebuild_provisional_stats_not_confirmed_from_v030",
+      "ruleset": "blood_arena_reconstruction_0.1",
+      "sourceVerification": "unverified_technical_reconstruction"
     },
     {
       "id": "yautja_reclaimer",
@@ -100,10 +102,10 @@
         "medkit_yautja"
       ],
       "passiveId": "sure_hands",
-      "sourceImplementationStatus": "implemented_v0_18",
-      "sourceStatusNote": "Statut dans la définition sérialisée ; le runtime v0.30 peut le remplacer. Ne pas en déduire la jouabilité.",
-      "provenance": "indexed_fragment_from_user_blood_arena_v0.30",
-      "ruleset": "blood_arena_v0.30"
+      "sourceStatusNote": "Aucun statut original confirmé ; valeurs et capacités provisoires de la reconstruction, jamais une fiche certifiée v0.30.",
+      "provenance": "technical_rebuild_provisional_stats_not_confirmed_from_v030",
+      "ruleset": "blood_arena_reconstruction_0.1",
+      "sourceVerification": "unverified_technical_reconstruction"
     },
     {
       "id": "yautja_gatekeeper",
@@ -125,10 +127,10 @@
         "scanner"
       ],
       "passiveId": "braced",
-      "sourceImplementationStatus": "implemented_v0_18",
-      "sourceStatusNote": "Statut dans la définition sérialisée ; le runtime v0.30 peut le remplacer. Ne pas en déduire la jouabilité.",
-      "provenance": "indexed_fragment_from_user_blood_arena_v0.30",
-      "ruleset": "blood_arena_v0.30"
+      "sourceStatusNote": "Aucun statut original confirmé ; valeurs et capacités provisoires de la reconstruction, jamais une fiche certifiée v0.30.",
+      "provenance": "technical_rebuild_provisional_stats_not_confirmed_from_v030",
+      "ruleset": "blood_arena_reconstruction_0.1",
+      "sourceVerification": "unverified_technical_reconstruction"
     },
     {
       "id": "cult_warden",
@@ -149,10 +151,10 @@
         "barrier"
       ],
       "passiveId": "braced",
-      "sourceImplementationStatus": "specified_not_implemented",
-      "sourceStatusNote": "Statut dans la définition sérialisée ; le runtime v0.30 peut le remplacer. Ne pas en déduire la jouabilité.",
-      "provenance": "indexed_fragment_from_user_blood_arena_v0.30",
-      "ruleset": "blood_arena_v0.30"
+      "sourceStatusNote": "Aucun statut original confirmé ; valeurs et capacités provisoires de la reconstruction, jamais une fiche certifiée v0.30.",
+      "provenance": "technical_rebuild_provisional_stats_not_confirmed_from_v030",
+      "ruleset": "blood_arena_reconstruction_0.1",
+      "sourceVerification": "unverified_technical_reconstruction"
     },
     {
       "id": "cult_voice",
@@ -173,10 +175,10 @@
         "order"
       ],
       "passiveId": "leader",
-      "sourceImplementationStatus": "specified_not_implemented",
-      "sourceStatusNote": "Statut dans la définition sérialisée ; le runtime v0.30 peut le remplacer. Ne pas en déduire la jouabilité.",
-      "provenance": "indexed_fragment_from_user_blood_arena_v0.30",
-      "ruleset": "blood_arena_v0.30"
+      "sourceStatusNote": "Aucun statut original confirmé ; valeurs et capacités provisoires de la reconstruction, jamais une fiche certifiée v0.30.",
+      "provenance": "technical_rebuild_provisional_stats_not_confirmed_from_v030",
+      "ruleset": "blood_arena_reconstruction_0.1",
+      "sourceVerification": "unverified_technical_reconstruction"
     },
     {
       "id": "cult_resin_worker",
@@ -197,10 +199,10 @@
         "resin"
       ],
       "passiveId": "resin_worker",
-      "sourceImplementationStatus": "specified_not_implemented",
-      "sourceStatusNote": "Statut dans la définition sérialisée ; le runtime v0.30 peut le remplacer. Ne pas en déduire la jouabilité.",
-      "provenance": "indexed_fragment_from_user_blood_arena_v0.30",
-      "ruleset": "blood_arena_v0.30"
+      "sourceStatusNote": "Aucun statut original confirmé ; valeurs et capacités provisoires de la reconstruction, jamais une fiche certifiée v0.30.",
+      "provenance": "technical_rebuild_provisional_stats_not_confirmed_from_v030",
+      "ruleset": "blood_arena_reconstruction_0.1",
+      "sourceVerification": "unverified_technical_reconstruction"
     },
     {
       "id": "black_lab_red_drone",
@@ -221,10 +223,10 @@
         "tail_sweep"
       ],
       "passiveId": "pack",
-      "sourceImplementationStatus": "specified_not_implemented",
-      "sourceStatusNote": "Statut dans la définition sérialisée ; le runtime v0.30 peut le remplacer. Ne pas en déduire la jouabilité.",
-      "provenance": "indexed_fragment_from_user_blood_arena_v0.30",
-      "ruleset": "blood_arena_v0.30"
+      "sourceStatusNote": "Aucun statut original confirmé ; valeurs et capacités provisoires de la reconstruction, jamais une fiche certifiée v0.30.",
+      "provenance": "technical_rebuild_provisional_stats_not_confirmed_from_v030",
+      "ruleset": "blood_arena_reconstruction_0.1",
+      "sourceVerification": "unverified_technical_reconstruction"
     },
     {
       "id": "black_lab_red_runner",
@@ -245,10 +247,10 @@
         "leap"
       ],
       "passiveId": "agile",
-      "sourceImplementationStatus": "specified_not_implemented",
-      "sourceStatusNote": "Statut dans la définition sérialisée ; le runtime v0.30 peut le remplacer. Ne pas en déduire la jouabilité.",
-      "provenance": "indexed_fragment_from_user_blood_arena_v0.30",
-      "ruleset": "blood_arena_v0.30"
+      "sourceStatusNote": "Aucun statut original confirmé ; valeurs et capacités provisoires de la reconstruction, jamais une fiche certifiée v0.30.",
+      "provenance": "technical_rebuild_provisional_stats_not_confirmed_from_v030",
+      "ruleset": "blood_arena_reconstruction_0.1",
+      "sourceVerification": "unverified_technical_reconstruction"
     },
     {
       "id": "penal_scavenger",
@@ -269,10 +271,10 @@
         "self_patch"
       ],
       "passiveId": "grit",
-      "sourceImplementationStatus": "specified_not_implemented",
-      "sourceStatusNote": "Statut dans la définition sérialisée ; le runtime v0.30 peut le remplacer. Ne pas en déduire la jouabilité.",
-      "provenance": "indexed_fragment_from_user_blood_arena_v0.30",
-      "ruleset": "blood_arena_v0.30"
+      "sourceStatusNote": "Aucun statut original confirmé ; valeurs et capacités provisoires de la reconstruction, jamais une fiche certifiée v0.30.",
+      "provenance": "technical_rebuild_provisional_stats_not_confirmed_from_v030",
+      "ruleset": "blood_arena_reconstruction_0.1",
+      "sourceVerification": "unverified_technical_reconstruction"
     },
     {
       "id": "penal_courier",
@@ -293,10 +295,10 @@
         "boost_pass"
       ],
       "passiveId": "runner",
-      "sourceImplementationStatus": "specified_not_implemented",
-      "sourceStatusNote": "Statut dans la définition sérialisée ; le runtime v0.30 peut le remplacer. Ne pas en déduire la jouabilité.",
-      "provenance": "indexed_fragment_from_user_blood_arena_v0.30",
-      "ruleset": "blood_arena_v0.30"
+      "sourceStatusNote": "Aucun statut original confirmé ; valeurs et capacités provisoires de la reconstruction, jamais une fiche certifiée v0.30.",
+      "provenance": "technical_rebuild_provisional_stats_not_confirmed_from_v030",
+      "ruleset": "blood_arena_reconstruction_0.1",
+      "sourceVerification": "unverified_technical_reconstruction"
     },
     {
       "id": "penal_brawler",
@@ -317,10 +319,10 @@
         "tackle"
       ],
       "passiveId": "heavy_grip",
-      "sourceImplementationStatus": "specified_not_implemented",
-      "sourceStatusNote": "Statut dans la définition sérialisée ; le runtime v0.30 peut le remplacer. Ne pas en déduire la jouabilité.",
-      "provenance": "indexed_fragment_from_user_blood_arena_v0.30",
-      "ruleset": "blood_arena_v0.30"
+      "sourceStatusNote": "Aucun statut original confirmé ; valeurs et capacités provisoires de la reconstruction, jamais une fiche certifiée v0.30.",
+      "provenance": "technical_rebuild_provisional_stats_not_confirmed_from_v030",
+      "ruleset": "blood_arena_reconstruction_0.1",
+      "sourceVerification": "unverified_technical_reconstruction"
     },
     {
       "id": "penal_saboteur",
@@ -343,10 +345,10 @@
         "salvage"
       ],
       "passiveId": "salvager",
-      "sourceImplementationStatus": "specified_not_implemented",
-      "sourceStatusNote": "Statut dans la définition sérialisée ; le runtime v0.30 peut le remplacer. Ne pas en déduire la jouabilité.",
-      "provenance": "indexed_fragment_from_user_blood_arena_v0.30",
-      "ruleset": "blood_arena_v0.30"
+      "sourceStatusNote": "Aucun statut original confirmé ; valeurs et capacités provisoires de la reconstruction, jamais une fiche certifiée v0.30.",
+      "provenance": "technical_rebuild_provisional_stats_not_confirmed_from_v030",
+      "ruleset": "blood_arena_reconstruction_0.1",
+      "sourceVerification": "unverified_technical_reconstruction"
     },
     {
       "id": "penal_medic",
@@ -367,10 +369,10 @@
         "heal"
       ],
       "passiveId": "none",
-      "sourceImplementationStatus": "specified_not_implemented",
-      "sourceStatusNote": "Statut dans la définition sérialisée ; le runtime v0.30 peut le remplacer. Ne pas en déduire la jouabilité.",
-      "provenance": "indexed_fragment_from_user_blood_arena_v0.30",
-      "ruleset": "blood_arena_v0.30"
+      "sourceStatusNote": "Aucun statut original confirmé ; valeurs et capacités provisoires de la reconstruction, jamais une fiche certifiée v0.30.",
+      "provenance": "technical_rebuild_provisional_stats_not_confirmed_from_v030",
+      "ruleset": "blood_arena_reconstruction_0.1",
+      "sourceVerification": "unverified_technical_reconstruction"
     },
     {
       "id": "penal_foreman",
@@ -391,10 +393,64 @@
         "order"
       ],
       "passiveId": "grit",
-      "sourceImplementationStatus": "specified_not_implemented",
-      "sourceStatusNote": "Statut dans la définition sérialisée ; le runtime v0.30 peut le remplacer. Ne pas en déduire la jouabilité.",
-      "provenance": "indexed_fragment_from_user_blood_arena_v0.30",
+      "sourceStatusNote": "Aucun statut original confirmé ; valeurs et capacités provisoires de la reconstruction, jamais une fiche certifiée v0.30.",
+      "provenance": "technical_rebuild_provisional_stats_not_confirmed_from_v030",
+      "ruleset": "blood_arena_reconstruction_0.1",
+      "sourceVerification": "unverified_technical_reconstruction"
+    },
+    {
+      "id": "uscm_pathfinder",
+      "name": "Éclaireur d’exfiltration",
+      "entityId": "faction.uscm",
+      "faction": "uscm",
+      "stats": {
+        "movement": 7,
+        "hp": 8,
+        "strength": 2,
+        "agility": 4,
+        "technique": 3,
+        "armor": 0
+      },
+      "cost": 110,
+      "rosterLimit": 1,
+      "abilities": [
+        "scanner",
+        "smoke"
+      ],
+      "passiveId": "sure_hands",
+      "sourceImplementationStatus": "implemented_v0_18",
+      "sourceStatusNote": "Définition sérialisée vue dans les extraits indexés ; cette indication ne valide pas les tests du moteur original.",
+      "provenance": "AVP_Blood_Arena_v0_30_JOUABLE.html_indexed_excerpt",
+      "sourceVerification": "verified_indexed_source_fragment",
+      "ruleset": "blood_arena_v0.30"
+    },
+    {
+      "id": "uscm_rescuer",
+      "name": "Brancardier d’assaut",
+      "entityId": "faction.uscm",
+      "faction": "uscm",
+      "stats": {
+        "movement": 5,
+        "hp": 9,
+        "strength": 3,
+        "agility": 3,
+        "technique": 4,
+        "armor": 1
+      },
+      "cost": 120,
+      "rosterLimit": 1,
+      "abilities": [
+        "heal",
+        "shotgun"
+      ],
+      "passiveId": "field_medic",
+      "sourceImplementationStatus": "implemented_v0_18",
+      "sourceStatusNote": "Définition sérialisée vue dans les extraits indexés ; cette indication ne valide pas les tests du moteur original.",
+      "provenance": "AVP_Blood_Arena_v0_30_JOUABLE.html_indexed_excerpt",
+      "sourceVerification": "verified_indexed_source_fragment",
       "ruleset": "blood_arena_v0.30"
     }
-  ]
+  ],
+  "verifiedSourceCount": 4,
+  "provisionalCount": 14
 }

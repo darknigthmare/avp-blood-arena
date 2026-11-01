@@ -32,12 +32,12 @@ function stageObstacles(id){
 function makeRoster(key,side){
  const originals=profiles.records.filter(r=>r.faction===key),spec=FACTIONS[key],entries=originals.length?originals:[FALLBACK[key]];
  const ys=[2,5,8,11];
- return ys.map((y,i)=>{const e=entries[i%entries.length],s=e.stats;return {uid:side+'-'+i,side,slot:i,id:e.id,name:e.name,entityId:e.entityId,species:spec.kind,x:side?21:2,y,hp:s.hp,maxHp:s.hp,stats:{...s},ap:2,stun:0,respawn:0,prototype:!originals.length,ability:(e.abilities||[])[0]||'defend'};});
+ return ys.map((y,i)=>{const e=entries[i%entries.length],s=e.stats;return {uid:side+'-'+i,side,slot:i,id:e.id,name:e.name,entityId:e.entityId,species:spec.kind,x:side?21:2,y,hp:s.hp,maxHp:s.hp,stats:{...s},ap:2,stun:0,respawn:0,prototype:!originals.length||e.sourceVerification!=='verified_indexed_source_fragment',ability:(e.abilities||[])[0]||'defend'};});
 }
 function startMatch(){
  const left=byId('teamPick').value,right=byId('opponentPick').value,arena=byId('arenaPick').value,mode=byId('modePick').value;
  match={left,right,arena,mode,units:[...makeRoster(left,0),...makeRoster(right,1)],blocked:stageObstacles(arena),ball:{x:11,y:6,holder:null},scores:[0,0],side:0,round:1,finished:false};
- selected=null;intent='move';busy=false;byId('menu').hidden=true;byId('match').hidden=false;byId('banner').hidden=true;byId('log').replaceChildren();msg('Déploiement sur '+byId('arenaPick').selectedOptions[0].textContent+'.');msg('Récupérez le Nexus au centre. 3 buts pour gagner.');if(match.units.some(u=>u.prototype))msg('AVERTISSEMENT : au moins une faction utilise un profil prototype non extrait de v0.30.');refresh();
+ selected=null;intent='move';busy=false;byId('menu').hidden=true;byId('match').hidden=false;byId('banner').hidden=true;byId('log').replaceChildren();msg('Déploiement sur '+byId('arenaPick').selectedOptions[0].textContent+'.');msg('Récupérez le Nexus au centre. 3 buts pour gagner.');if(match.units.some(u=>u.prototype))msg('AVERTISSEMENT : profils provisoires non certifiés par le fichier v0.30 ; la relance n est pas la version historique.');refresh();
 }
 function at(x,y){return match.units.find(u=>u.hp>0&&u.x===x&&u.y===y)||null;}
 function blocked(x,y){return x<0||x>=W||y<0||y>=H||match.blocked.some(p=>p[0]===x&&p[1]===y);}
@@ -117,7 +117,7 @@ function refresh(){
  byId('endTurn').disabled=!myTurn();byId('actionMove').classList.toggle('active',intent==='move');
  byId('actionPass').classList.toggle('active',intent==='pass');byId('actionSpecial').classList.toggle('active',intent==='special');
  byId('selectionHelp').textContent=selected?'Clique une case, un adversaire ou sélectionne une technique.':'Sélectionne une unité de l’équipe active.';
- if(selected){byId('unitCard').textContent='';const h=document.createElement('strong'),em=document.createElement('em'),p=document.createElement('div');h.textContent=selected.name;em.textContent=selected.prototype?'PROFIL PROTOTYPE — NON REPRIS DE V0.30':'PROFIL SOURCE INDEXÉE V0.30';p.textContent='PV '+selected.hp+'/'+selected.maxHp+' · PA '+selected.ap+' · FOR '+selected.stats.strength+' · ARM '+selected.stats.armor+' · MOB '+selected.stats.movement;byId('unitCard').append(h,em,p);}
+ if(selected){byId('unitCard').textContent='';const h=document.createElement('strong'),em=document.createElement('em'),p=document.createElement('div');h.textContent=selected.name;em.textContent=selected.prototype?'PROFIL PROVISOIRE — DONNÉES V0.30 NON CERTIFIÉES':'PROFIL RELU DANS LES EXTRAITS V0.30';p.textContent='PV '+selected.hp+'/'+selected.maxHp+' · PA '+selected.ap+' · FOR '+selected.stats.strength+' · ARM '+selected.stats.armor+' · MOB '+selected.stats.movement;byId('unitCard').append(h,em,p);}
  else byId('unitCard').textContent='Aucune unité sélectionnée.';render();
 }
 function drawShape(u,x,y){
@@ -195,7 +195,7 @@ async function boot(){
  try{
  const res=await Promise.all([fetch('./data/alien-base.snapshot.json'),fetch('./data/blood-arena.profiles.json'),fetch('./data/cross-game-references.json')]);for(const r of res)if(!r.ok)throw Error('HTTP '+r.status);catalog=await res[0].json();profiles=await res[1].json();crossGame=await res[2].json();
  if(!Array.isArray(catalog.entities)||!Array.isArray(profiles.records)||!Array.isArray(crossGame.cards)||!Array.isArray(crossGame.researchWeapons))throw Error('format inattendu');
- byId('dataStatus').textContent=catalog.entities.length+' références, '+profiles.records.length+' profils v0.30 partiels, '+crossGame.cards.length+' cartes TCG et '+crossGame.researchWeapons.length+' armes à vérifier';
+ byId('dataStatus').textContent=catalog.entities.length+' références, '+profiles.records.length+' profils (4 confirmés, 14 provisoires), '+crossGame.cards.length+' cartes TCG et '+crossGame.researchWeapons.length+' armes à vérifier';
  for(const [key,f] of Object.entries(FACTIONS)){for(const id of ['teamPick','opponentPick']){const opt=document.createElement('option');opt.value=key;opt.textContent=f.name;byId(id).append(opt);}}byId('teamPick').value='uscm';byId('opponentPick').value='hive';
  syncCodexTypes();renderCodex();
  }catch(e){byId('dataStatus').textContent='ERREUR DE LECTURE : '+e.message;byId('startButton').disabled=true;msg('Les fichiers de la base sont inaccessibles.');}
