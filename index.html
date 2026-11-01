@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#09141a">
+<title>AVP Blood Arena — Relance technique</title>
+<meta name="description" content="Relance technique jouable d'AVP Blood Arena et codex alimenté par Alien_base. Prototype distinct de la version historique v0.30.">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<header class="topbar"><div class="brand"><span class="symbol">A<span>V</span>P</span><div><strong>BLOOD ARENA</strong><small>RELANCE TECHNIQUE · BUILD 0.1 · FAN GAME NON OFFICIEL</small></div></div><div class="top-actions"><button class="ghost" id="openCodex">BASE DE DONNÉES</button><button class="ghost" id="openHelp">RÈGLES</button></div></header>
+<main class="main">
+<section class="arena-shell">
+ <div id="menu" class="menu">
+  <span class="eyebrow">CIRCUIT DES NEUF FACTIONS</span><h1>LE TERRAIN NE PARDONNE RIEN.</h1>
+  <p>Match tactique au tour par tour : récupère le Nexus, protège ton porteur et atteins le but adverse. Cette relance jouable est une reconstruction de secours ; l'archive complète v0.30 n'a pas encore été récupérée.</p>
+  <div class="setup"><label>TON ÉQUIPE<select id="teamPick"></select></label><label>ADVERSAIRE<select id="opponentPick"></select></label><label>ARÈNE<select id="arenaPick"><option value="dock">DOCK 17 · TRANSFERT</option><option value="hive">RUCHER · GALLERIES</option><option value="temple">RUINES · TRIBUNES</option></select></label><label>MODE<select id="modePick"><option value="ai">SOLO CONTRE IA</option><option value="local">DEUX JOUEURS LOCAUX</option></select></label></div>
+  <button class="primary large" id="startButton">ENTRER DANS L'ARÈNE</button>
+  <div class="footnote">Données communes : <span id="dataStatus">chargement…</span>. Statistiques spécifiques au sport séparées des données de lore.</div>
+ </div>
+ <div id="match" hidden>
+  <div class="scoreboard"><div class="team-side"><span class="tiny">ÉQUIPE LOCALE</span><b id="leftName">—</b></div><div class="scores"><strong id="scoreLeft">0</strong><span>:</span><strong id="scoreRight">0</strong><small id="roundNumber">MANCHE 1 / 16</small></div><div class="team-side right"><span class="tiny">ADVERSAIRE</span><b id="rightName">—</b></div></div>
+  <canvas id="field" width="1008" height="588" aria-label="Terrain tactique AVP Blood Arena ; cliquez sur vos unités et sur les cases pour jouer."></canvas>
+  <div class="field-footer"><span id="turnLabel">ÉQUIPE ACTIVE</span><span id="ballLabel">NEXUS LIBRE</span><span id="modeLabel">MODE SOLO</span></div>
+  <div id="banner" class="banner" aria-live="polite" hidden></div>
+ </div>
+</section>
+<aside class="sidebar">
+ <div class="panel"><h2>COMMANDES DE MATCH</h2><p class="muted" id="selectionHelp">Sélectionne ton équipe et lance une rencontre.</p><div id="unitCard" class="unit-card">Aucune unité sélectionnée.</div>
+ <div class="buttons"><button id="actionMove" disabled>SE DÉPLACER</button><button id="actionPass" disabled>PASSER</button><button id="actionSpecial" disabled>CAPACITÉ</button><button id="endTurn" disabled>FIN DU TOUR</button></div></div>
+ <div class="panel"><h2>TRANSMISSIONS</h2><div id="log" class="log" aria-live="polite">Système prêt.</div></div>
+ <div class="panel stats"><h2>CIRCUIT LOCAL</h2><div><span>Matchs terminés</span><strong id="playedCount">0</strong></div><div><span>Victoires</span><strong id="winCount">0</strong></div><button class="ghost wide" id="menuButton">RETOUR AU MENU</button></div>
+</aside>
+</main>
+<div class="modal" id="codexModal" hidden role="dialog" aria-modal="true" aria-labelledby="codexTitle"><div class="modal-content"><div class="modal-top"><div><span class="eyebrow">RÉFÉRENTIEL COMMUN</span><h2 id="codexTitle">ALIEN_BASE · ARCHIVES</h2></div><button class="ghost" id="closeCodex">FERMER</button></div><p class="muted">Les références de l'univers ne sont pas des unités déverrouillées automatiquement. Les 16 profils de jeu sont un extrait partiel de la version historique.</p><div class="filters"><input id="codexQuery" placeholder="Rechercher une caste, une arme, un personnage…" aria-label="Rechercher dans le codex"><select id="codexType" aria-label="Catégorie"><option value="all">TOUTES LES CATÉGORIES</option></select></div><div id="codexCount" class="muted"></div><div id="codexItems" class="codex-items"></div></div></div>
+<div class="modal" id="helpModal" hidden role="dialog" aria-modal="true" aria-labelledby="helpTitle"><div class="modal-content help"><div class="modal-top"><h2 id="helpTitle">PROTOCOLE DE MATCH</h2><button class="ghost" id="closeHelp">FERMER</button></div><p>1. Clique sur une de tes unités, puis une case libre à portée pour te déplacer. Deux actions maximum par unité et par tour.</p><p>2. Traverse le Nexus au centre pour le ramasser, puis entre dans le couloir de but opposé. Une équipe gagne à trois buts, ou mène après seize manches.</p><p>3. Clique sur un ennemi adjacent pour effectuer un plaquage. Le bouton « Passer » transmet le Nexus à un allié à portée. « Capacité » active une technique de faction.</p><p>4. Passe à l'autre équipe avec « Fin du tour » ; en Solo, l'IA joue ensuite. Jouable à la souris ou au tactile.</p><p class="muted">Cette relance ne reproduit pas l'intégralité des campagnes, images, collections et règles de l'ancienne version 0.30. Les profils manquants sont explicitement signalés comme provisoires.</p></div></div>
+<script type="module" src="./game.js"></script>
+</body></html>
