@@ -1,0 +1,400 @@
+{
+  "schemaVersion": 1,
+  "game": "avp-blood-arena",
+  "ruleset": "0.30",
+  "scope": "partial_verified_extract",
+  "totalRecords": 16,
+  "sourceMaterial": "AVP_Blood_Arena_v0_30_JOUABLE.html, extraits indexés disponibles le 1er novembre 2026",
+  "warning": "Extraction partielle. Ne pas confondre statuts déclarés et implémentation effective, ni spécialisations originales et canon officiel.",
+  "records": [
+    {
+      "id": "uscm_recruit",
+      "name": "Auxiliaire colonial",
+      "entityId": "faction.uscm",
+      "faction": "uscm",
+      "stats": {
+        "movement": 6,
+        "hp": 7,
+        "strength": 2,
+        "agility": 3,
+        "technique": 2,
+        "armor": 0
+      },
+      "cost": 50,
+      "rosterLimit": 12,
+      "abilities": [
+        "self_patch"
+      ],
+      "passiveId": "none",
+      "sourceImplementationStatus": "specified_not_implemented",
+      "sourceStatusNote": "Statut dans la définition sérialisée ; le runtime v0.30 peut le remplacer. Ne pas en déduire la jouabilité.",
+      "provenance": "indexed_fragment_from_user_blood_arena_v0.30",
+      "ruleset": "blood_arena_v0.30"
+    },
+    {
+      "id": "hive_praetorian",
+      "name": "Praetorian",
+      "entityId": "caste.praetorian",
+      "faction": "hive",
+      "stats": {
+        "movement": 4,
+        "hp": 14,
+        "strength": 5,
+        "agility": 2,
+        "technique": 1,
+        "armor": 2
+      },
+      "cost": 160,
+      "rosterLimit": 1,
+      "abilities": [
+        "roar"
+      ],
+      "passiveId": "braced",
+      "sourceImplementationStatus": "specified_not_implemented",
+      "sourceStatusNote": "Statut dans la définition sérialisée ; le runtime v0.30 peut le remplacer. Ne pas en déduire la jouabilité.",
+      "provenance": "indexed_fragment_from_user_blood_arena_v0.30",
+      "ruleset": "blood_arena_v0.30"
+    },
+    {
+      "id": "hive_gallery",
+      "name": "Warrior de galerie",
+      "entityId": "caste.warrior",
+      "faction": "hive",
+      "stats": {
+        "movement": 6,
+        "hp": 9,
+        "strength": 4,
+        "agility": 4,
+        "technique": 1,
+        "armor": 0
+      },
+      "cost": 125,
+      "rosterLimit": 1,
+      "abilities": [
+        "pounce",
+        "capture"
+      ],
+      "passiveId": "stalker",
+      "sourceImplementationStatus": "implemented_v0_18",
+      "sourceStatusNote": "Statut dans la définition sérialisée ; le runtime v0.30 peut le remplacer. Ne pas en déduire la jouabilité.",
+      "provenance": "indexed_fragment_from_user_blood_arena_v0.30",
+      "ruleset": "blood_arena_v0.30"
+    },
+    {
+      "id": "yautja_reclaimer",
+      "name": "Chasseur de récupération",
+      "entityId": "species.yautja",
+      "faction": "yautja",
+      "stats": {
+        "movement": 6,
+        "hp": 9,
+        "strength": 3,
+        "agility": 4,
+        "technique": 4,
+        "armor": 1
+      },
+      "cost": 135,
+      "rosterLimit": 1,
+      "abilities": [
+        "net",
+        "medkit_yautja"
+      ],
+      "passiveId": "sure_hands",
+      "sourceImplementationStatus": "implemented_v0_18",
+      "sourceStatusNote": "Statut dans la définition sérialisée ; le runtime v0.30 peut le remplacer. Ne pas en déduire la jouabilité.",
+      "provenance": "indexed_fragment_from_user_blood_arena_v0.30",
+      "ruleset": "blood_arena_v0.30"
+    },
+    {
+      "id": "yautja_gatekeeper",
+      "name": "Gardien du passage",
+      "entityId": "species.yautja",
+      "faction": "yautja",
+      "stats": {
+        "movement": 5,
+        "hp": 11,
+        "strength": 4,
+        "agility": 3,
+        "technique": 3,
+        "armor": 1
+      },
+      "cost": 130,
+      "rosterLimit": 1,
+      "abilities": [
+        "spear",
+        "scanner"
+      ],
+      "passiveId": "braced",
+      "sourceImplementationStatus": "implemented_v0_18",
+      "sourceStatusNote": "Statut dans la définition sérialisée ; le runtime v0.30 peut le remplacer. Ne pas en déduire la jouabilité.",
+      "provenance": "indexed_fragment_from_user_blood_arena_v0.30",
+      "ruleset": "blood_arena_v0.30"
+    },
+    {
+      "id": "cult_warden",
+      "name": "Gardien de confinement",
+      "entityId": "species.human",
+      "faction": "cult",
+      "stats": {
+        "movement": 4,
+        "hp": 13,
+        "strength": 4,
+        "agility": 2,
+        "technique": 3,
+        "armor": 2
+      },
+      "cost": 135,
+      "rosterLimit": 1,
+      "abilities": [
+        "barrier"
+      ],
+      "passiveId": "braced",
+      "sourceImplementationStatus": "specified_not_implemented",
+      "sourceStatusNote": "Statut dans la définition sérialisée ; le runtime v0.30 peut le remplacer. Ne pas en déduire la jouabilité.",
+      "provenance": "indexed_fragment_from_user_blood_arena_v0.30",
+      "ruleset": "blood_arena_v0.30"
+    },
+    {
+      "id": "cult_voice",
+      "name": "Voix du culte",
+      "entityId": "species.human",
+      "faction": "cult",
+      "stats": {
+        "movement": 5,
+        "hp": 9,
+        "strength": 2,
+        "agility": 3,
+        "technique": 5,
+        "armor": 0
+      },
+      "cost": 120,
+      "rosterLimit": 1,
+      "abilities": [
+        "order"
+      ],
+      "passiveId": "leader",
+      "sourceImplementationStatus": "specified_not_implemented",
+      "sourceStatusNote": "Statut dans la définition sérialisée ; le runtime v0.30 peut le remplacer. Ne pas en déduire la jouabilité.",
+      "provenance": "indexed_fragment_from_user_blood_arena_v0.30",
+      "ruleset": "blood_arena_v0.30"
+    },
+    {
+      "id": "cult_resin_worker",
+      "name": "Opérateur de résine",
+      "entityId": "species.human",
+      "faction": "cult",
+      "stats": {
+        "movement": 5,
+        "hp": 9,
+        "strength": 2,
+        "agility": 3,
+        "technique": 4,
+        "armor": 1
+      },
+      "cost": 95,
+      "rosterLimit": 2,
+      "abilities": [
+        "resin"
+      ],
+      "passiveId": "resin_worker",
+      "sourceImplementationStatus": "specified_not_implemented",
+      "sourceStatusNote": "Statut dans la définition sérialisée ; le runtime v0.30 peut le remplacer. Ne pas en déduire la jouabilité.",
+      "provenance": "indexed_fragment_from_user_blood_arena_v0.30",
+      "ruleset": "blood_arena_v0.30"
+    },
+    {
+      "id": "black_lab_red_drone",
+      "name": "Drone — souche rouge",
+      "entityId": "caste.drone",
+      "faction": "black_lab",
+      "stats": {
+        "movement": 6,
+        "hp": 10,
+        "strength": 3,
+        "agility": 3,
+        "technique": 1,
+        "armor": 1
+      },
+      "cost": 85,
+      "rosterLimit": 8,
+      "abilities": [
+        "tail_sweep"
+      ],
+      "passiveId": "pack",
+      "sourceImplementationStatus": "specified_not_implemented",
+      "sourceStatusNote": "Statut dans la définition sérialisée ; le runtime v0.30 peut le remplacer. Ne pas en déduire la jouabilité.",
+      "provenance": "indexed_fragment_from_user_blood_arena_v0.30",
+      "ruleset": "blood_arena_v0.30"
+    },
+    {
+      "id": "black_lab_red_runner",
+      "name": "Runner — souche rouge",
+      "entityId": "caste.runner",
+      "faction": "black_lab",
+      "stats": {
+        "movement": 7,
+        "hp": 8,
+        "strength": 3,
+        "agility": 5,
+        "technique": 1,
+        "armor": 0
+      },
+      "cost": 90,
+      "rosterLimit": 3,
+      "abilities": [
+        "leap"
+      ],
+      "passiveId": "agile",
+      "sourceImplementationStatus": "specified_not_implemented",
+      "sourceStatusNote": "Statut dans la définition sérialisée ; le runtime v0.30 peut le remplacer. Ne pas en déduire la jouabilité.",
+      "provenance": "indexed_fragment_from_user_blood_arena_v0.30",
+      "ruleset": "blood_arena_v0.30"
+    },
+    {
+      "id": "penal_scavenger",
+      "name": "Récupérateur pénal",
+      "entityId": "species.human",
+      "faction": "penal",
+      "stats": {
+        "movement": 6,
+        "hp": 7,
+        "strength": 2,
+        "agility": 3,
+        "technique": 2,
+        "armor": 0
+      },
+      "cost": 45,
+      "rosterLimit": 12,
+      "abilities": [
+        "self_patch"
+      ],
+      "passiveId": "grit",
+      "sourceImplementationStatus": "specified_not_implemented",
+      "sourceStatusNote": "Statut dans la définition sérialisée ; le runtime v0.30 peut le remplacer. Ne pas en déduire la jouabilité.",
+      "provenance": "indexed_fragment_from_user_blood_arena_v0.30",
+      "ruleset": "blood_arena_v0.30"
+    },
+    {
+      "id": "penal_courier",
+      "name": "Coursier",
+      "entityId": "species.human",
+      "faction": "penal",
+      "stats": {
+        "movement": 7,
+        "hp": 7,
+        "strength": 2,
+        "agility": 4,
+        "technique": 3,
+        "armor": 0
+      },
+      "cost": 75,
+      "rosterLimit": 4,
+      "abilities": [
+        "boost_pass"
+      ],
+      "passiveId": "runner",
+      "sourceImplementationStatus": "specified_not_implemented",
+      "sourceStatusNote": "Statut dans la définition sérialisée ; le runtime v0.30 peut le remplacer. Ne pas en déduire la jouabilité.",
+      "provenance": "indexed_fragment_from_user_blood_arena_v0.30",
+      "ruleset": "blood_arena_v0.30"
+    },
+    {
+      "id": "penal_brawler",
+      "name": "Bagarreur",
+      "entityId": "species.human",
+      "faction": "penal",
+      "stats": {
+        "movement": 5,
+        "hp": 10,
+        "strength": 4,
+        "agility": 2,
+        "technique": 1,
+        "armor": 1
+      },
+      "cost": 80,
+      "rosterLimit": 4,
+      "abilities": [
+        "tackle"
+      ],
+      "passiveId": "heavy_grip",
+      "sourceImplementationStatus": "specified_not_implemented",
+      "sourceStatusNote": "Statut dans la définition sérialisée ; le runtime v0.30 peut le remplacer. Ne pas en déduire la jouabilité.",
+      "provenance": "indexed_fragment_from_user_blood_arena_v0.30",
+      "ruleset": "blood_arena_v0.30"
+    },
+    {
+      "id": "penal_saboteur",
+      "name": "Saboteur",
+      "entityId": "species.human",
+      "faction": "penal",
+      "stats": {
+        "movement": 6,
+        "hp": 8,
+        "strength": 2,
+        "agility": 3,
+        "technique": 4,
+        "armor": 0
+      },
+      "cost": 90,
+      "rosterLimit": 2,
+      "abilities": [
+        "smoke",
+        "rifle",
+        "salvage"
+      ],
+      "passiveId": "salvager",
+      "sourceImplementationStatus": "specified_not_implemented",
+      "sourceStatusNote": "Statut dans la définition sérialisée ; le runtime v0.30 peut le remplacer. Ne pas en déduire la jouabilité.",
+      "provenance": "indexed_fragment_from_user_blood_arena_v0.30",
+      "ruleset": "blood_arena_v0.30"
+    },
+    {
+      "id": "penal_medic",
+      "name": "Secouriste de fortune",
+      "entityId": "species.human",
+      "faction": "penal",
+      "stats": {
+        "movement": 5,
+        "hp": 8,
+        "strength": 2,
+        "agility": 3,
+        "technique": 3,
+        "armor": 0
+      },
+      "cost": 80,
+      "rosterLimit": 2,
+      "abilities": [
+        "heal"
+      ],
+      "passiveId": "none",
+      "sourceImplementationStatus": "specified_not_implemented",
+      "sourceStatusNote": "Statut dans la définition sérialisée ; le runtime v0.30 peut le remplacer. Ne pas en déduire la jouabilité.",
+      "provenance": "indexed_fragment_from_user_blood_arena_v0.30",
+      "ruleset": "blood_arena_v0.30"
+    },
+    {
+      "id": "penal_foreman",
+      "name": "Meneur des condamnés",
+      "entityId": "species.human",
+      "faction": "penal",
+      "stats": {
+        "movement": 5,
+        "hp": 10,
+        "strength": 3,
+        "agility": 3,
+        "technique": 3,
+        "armor": 1
+      },
+      "cost": 110,
+      "rosterLimit": 1,
+      "abilities": [
+        "order"
+      ],
+      "passiveId": "grit",
+      "sourceImplementationStatus": "specified_not_implemented",
+      "sourceStatusNote": "Statut dans la définition sérialisée ; le runtime v0.30 peut le remplacer. Ne pas en déduire la jouabilité.",
+      "provenance": "indexed_fragment_from_user_blood_arena_v0.30",
+      "ruleset": "blood_arena_v0.30"
+    }
+  ]
+}
