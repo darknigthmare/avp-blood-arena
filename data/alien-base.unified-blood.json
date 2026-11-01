@@ -1,0 +1,292 @@
+{
+  "schemaVersion": "1.0.0",
+  "producer": "alien_base/scripts/export-blood-arena-public.mjs",
+  "consumer": "avp-blood-arena",
+  "policy": "identities-provenance-only; sport balancing belongs exclusively to the game",
+  "counts": {
+    "total": 18,
+    "linked": 7,
+    "unresolved": 11,
+    "verifiedLegacy": 4,
+    "provisionalLegacy": 14
+  },
+  "historicalBuild": {
+    "fileName": "AVP_Blood_Arena_v0_36_JOUABLE.html",
+    "documentTitle": "AVP · Blood Arena 0.36 — Saison Zéro & Équilibre compétitif",
+    "bytesReported": 16545313,
+    "linesReported": 23066,
+    "verification": "indexed-text-metadata-only",
+    "completeSourceImported": false,
+    "hashVerified": false,
+    "releaseClaim": "Not yet restored to GitHub; do not label fallback as v0.36"
+  },
+  "profiles": [
+    {
+      "localId": "uscm_recruit",
+      "localName": "Auxiliaire colonial",
+      "identityId": "faction.uscm",
+      "identityName": "United States Colonial Marine Corps",
+      "identityCategory": "faction",
+      "identityClassification": "project-source",
+      "qualifier": "faction-membership-not-individual-character",
+      "sourceVerification": "verified_indexed_source_fragment",
+      "sources": [
+        {
+          "repository": "darknigthmare/aliens-tantalus-frontier",
+          "path": "src/content-core-v50.js",
+          "blobSha": "0c49f6b2f01a43ec6858f568056c629d1a9bc27c"
+        },
+        {
+          "repository": "darknigthmare/world-hive-wars",
+          "path": "src/game/alien.js",
+          "blobSha": "20edb256d4dd486624c97376678b634a34fa2832"
+        }
+      ]
+    },
+    {
+      "localId": "hive_praetorian",
+      "localName": "Praetorian",
+      "identityId": "bio.xenomorph.praetorian",
+      "identityName": "Prétorien",
+      "identityCategory": "organism",
+      "identityClassification": "project-source",
+      "qualifier": "base-caste-not-source-specific-skin",
+      "sourceVerification": "verified_indexed_source_fragment",
+      "sources": [
+        {
+          "repository": "darknigthmare/xeno-trace",
+          "path": "js/species.mjs",
+          "blobSha": "570305d732791d75d2b2a140717453d09df8eca5"
+        },
+        {
+          "repository": "darknigthmare/aliens-tantalus-frontier",
+          "path": "src/content-core-v50.js",
+          "blobSha": "0c49f6b2f01a43ec6858f568056c629d1a9bc27c"
+        },
+        {
+          "repository": "darknigthmare/aliens-tantalus-frontier",
+          "path": "src/afe2-roster-v110.js",
+          "blobSha": "c04329989b41777e84a987264ec79c6b227047ac"
+        }
+      ]
+    },
+    {
+      "localId": "hive_gallery",
+      "localName": "Warrior de galerie",
+      "identityId": "bio.xenomorph.warrior",
+      "identityName": "Warrior",
+      "identityCategory": "organism",
+      "identityClassification": "project-source",
+      "qualifier": "base-archetype-only-gallery-phenotype-local",
+      "sourceVerification": "unverified_technical_reconstruction",
+      "sources": [
+        {
+          "repository": "darknigthmare/xeno-trace",
+          "path": "js/species.mjs",
+          "blobSha": "570305d732791d75d2b2a140717453d09df8eca5"
+        },
+        {
+          "repository": "darknigthmare/world-hive-wars",
+          "path": "src/game/data.js",
+          "blobSha": "18b698470e7e239fa460c5c32bd6fe84a622509d"
+        },
+        {
+          "repository": "darknigthmare/world-hive-wars",
+          "path": "src/game/data.js",
+          "blobSha": "18b698470e7e239fa460c5c32bd6fe84a622509d"
+        },
+        {
+          "repository": "darknigthmare/world-hive-wars",
+          "path": "src/game/data.js",
+          "blobSha": "18b698470e7e239fa460c5c32bd6fe84a622509d"
+        },
+        {
+          "repository": "darknigthmare/world-hive-wars",
+          "path": "src/game/data.js",
+          "blobSha": "18b698470e7e239fa460c5c32bd6fe84a622509d"
+        },
+        {
+          "repository": "darknigthmare/aliens-tantalus-frontier",
+          "path": "src/content-core-v50.js",
+          "blobSha": "0c49f6b2f01a43ec6858f568056c629d1a9bc27c"
+        },
+        {
+          "repository": "darknigthmare/aliens-tantalus-frontier",
+          "path": "src/afe2-roster-v110.js",
+          "blobSha": "c04329989b41777e84a987264ec79c6b227047ac"
+        }
+      ]
+    },
+    {
+      "localId": "black_lab_red_drone",
+      "localName": "Drone — souche rouge",
+      "identityId": "bio.xenomorph.drone",
+      "identityName": "Drone",
+      "identityCategory": "organism",
+      "identityClassification": "project-source",
+      "qualifier": "base-archetype-only-red-souche-not-canon",
+      "sourceVerification": "unverified_technical_reconstruction",
+      "sources": [
+        {
+          "repository": "darknigthmare/xeno-trace",
+          "path": "js/species.mjs",
+          "blobSha": "570305d732791d75d2b2a140717453d09df8eca5"
+        },
+        {
+          "repository": "darknigthmare/world-hive-wars",
+          "path": "src/game/data.js",
+          "blobSha": "18b698470e7e239fa460c5c32bd6fe84a622509d"
+        },
+        {
+          "repository": "darknigthmare/world-hive-wars",
+          "path": "src/game/data.js",
+          "blobSha": "18b698470e7e239fa460c5c32bd6fe84a622509d"
+        },
+        {
+          "repository": "darknigthmare/aliens-tantalus-frontier",
+          "path": "src/afe2-roster-v110.js",
+          "blobSha": "c04329989b41777e84a987264ec79c6b227047ac"
+        }
+      ]
+    },
+    {
+      "localId": "black_lab_red_runner",
+      "localName": "Runner — souche rouge",
+      "identityId": "bio.xenomorph.runner",
+      "identityName": "Runner",
+      "identityCategory": "organism",
+      "identityClassification": "project-source",
+      "qualifier": "base-archetype-only-red-souche-not-canon",
+      "sourceVerification": "unverified_technical_reconstruction",
+      "sources": [
+        {
+          "repository": "darknigthmare/xeno-trace",
+          "path": "js/species.mjs",
+          "blobSha": "570305d732791d75d2b2a140717453d09df8eca5"
+        },
+        {
+          "repository": "darknigthmare/aliens-tantalus-frontier",
+          "path": "src/content-core-v50.js",
+          "blobSha": "0c49f6b2f01a43ec6858f568056c629d1a9bc27c"
+        },
+        {
+          "repository": "darknigthmare/aliens-tantalus-frontier",
+          "path": "src/afe2-roster-v110.js",
+          "blobSha": "c04329989b41777e84a987264ec79c6b227047ac"
+        }
+      ]
+    },
+    {
+      "localId": "uscm_pathfinder",
+      "localName": "Éclaireur d’exfiltration",
+      "identityId": "faction.uscm",
+      "identityName": "United States Colonial Marine Corps",
+      "identityCategory": "faction",
+      "identityClassification": "project-source",
+      "qualifier": "faction-membership-not-individual-character",
+      "sourceVerification": "verified_indexed_source_fragment",
+      "sources": [
+        {
+          "repository": "darknigthmare/aliens-tantalus-frontier",
+          "path": "src/content-core-v50.js",
+          "blobSha": "0c49f6b2f01a43ec6858f568056c629d1a9bc27c"
+        },
+        {
+          "repository": "darknigthmare/world-hive-wars",
+          "path": "src/game/alien.js",
+          "blobSha": "20edb256d4dd486624c97376678b634a34fa2832"
+        }
+      ]
+    },
+    {
+      "localId": "uscm_rescuer",
+      "localName": "Brancardier d’assaut",
+      "identityId": "faction.uscm",
+      "identityName": "United States Colonial Marine Corps",
+      "identityCategory": "faction",
+      "identityClassification": "project-source",
+      "qualifier": "faction-membership-not-individual-character",
+      "sourceVerification": "verified_indexed_source_fragment",
+      "sources": [
+        {
+          "repository": "darknigthmare/aliens-tantalus-frontier",
+          "path": "src/content-core-v50.js",
+          "blobSha": "0c49f6b2f01a43ec6858f568056c629d1a9bc27c"
+        },
+        {
+          "repository": "darknigthmare/world-hive-wars",
+          "path": "src/game/alien.js",
+          "blobSha": "20edb256d4dd486624c97376678b634a34fa2832"
+        }
+      ]
+    }
+  ],
+  "unresolved": [
+    {
+      "localId": "yautja_reclaimer",
+      "localName": "Chasseur de récupération",
+      "reason": "No general Yautja species identity is currently established in unified registry; not a known Predator character",
+      "sourceVerification": "unverified_technical_reconstruction"
+    },
+    {
+      "localId": "yautja_gatekeeper",
+      "localName": "Gardien du passage",
+      "reason": "Local Yautja role, no evidence for equivalence to an identified Predator character",
+      "sourceVerification": "unverified_technical_reconstruction"
+    },
+    {
+      "localId": "cult_warden",
+      "localName": "Gardien de confinement",
+      "reason": "Blood Arena cult is not proven identical to World Hive Wars Children of the Perfected Host",
+      "sourceVerification": "unverified_technical_reconstruction"
+    },
+    {
+      "localId": "cult_voice",
+      "localName": "Voix du culte",
+      "reason": "Similar cult naming does not prove faction or character identity across games",
+      "sourceVerification": "unverified_technical_reconstruction"
+    },
+    {
+      "localId": "cult_resin_worker",
+      "localName": "Opérateur de résine",
+      "reason": "Fictional cult worker role has no verified unified identity",
+      "sourceVerification": "unverified_technical_reconstruction"
+    },
+    {
+      "localId": "penal_scavenger",
+      "localName": "Récupérateur pénal",
+      "reason": "Penal colony role; no exact faction or character identity evidenced",
+      "sourceVerification": "unverified_technical_reconstruction"
+    },
+    {
+      "localId": "penal_courier",
+      "localName": "Coursier",
+      "reason": "Penal colony role; no exact faction or character identity evidenced",
+      "sourceVerification": "unverified_technical_reconstruction"
+    },
+    {
+      "localId": "penal_brawler",
+      "localName": "Bagarreur",
+      "reason": "Penal colony role; no exact faction or character identity evidenced",
+      "sourceVerification": "unverified_technical_reconstruction"
+    },
+    {
+      "localId": "penal_saboteur",
+      "localName": "Saboteur",
+      "reason": "Penal colony role; no exact faction or character identity evidenced",
+      "sourceVerification": "unverified_technical_reconstruction"
+    },
+    {
+      "localId": "penal_medic",
+      "localName": "Secouriste de fortune",
+      "reason": "Penal colony role; no exact faction or character identity evidenced",
+      "sourceVerification": "unverified_technical_reconstruction"
+    },
+    {
+      "localId": "penal_foreman",
+      "localName": "Meneur des condamnés",
+      "reason": "Penal colony role; no exact faction or character identity evidenced",
+      "sourceVerification": "unverified_technical_reconstruction"
+    }
+  ]
+}
