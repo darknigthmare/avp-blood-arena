@@ -5,7 +5,7 @@ Ce dépôt public vient d'être initialisé depuis un README vide. La version hi
 La relance technique livre :
 - un match tactique jouable 24×14 cases, 9 factions, Nexus à récupérer, plaquage, passe, capacités, score, fin de match, IA locale et mode 2 joueurs locaux ;
 - un codex consultable de 68 entités chargées depuis le snapshot Alien_base ;
-- 16 profils de stats recopiés depuis des fragments indexés de la v0.30, sans prétendre contenir les autres profils ;
+- 18 profils de sport : 4 retrouvés dans des extraits vérifiés de la v0.30, 14 autres reconstructions provisoires (non certifiées) ;
 - 3 factions avec profils provisoires explicitement marqués, à remplacer dès récupération des sources originales ;
 - une progression locale de matchs et victoires, et un mode tactile/souris.
 
@@ -28,3 +28,7 @@ Fan game non officiel. Alien et Predator appartiennent à leurs ayants droit. Ne
 ## Archives de l'ensemble des jeux — v0.2
 
 Depuis le dépôt privé Alien_base (pipeline `node scripts/export-blood-arena.mjs`), le jeu public embarque désormais `data/cross-game-references.json` : 158 cartes AVP Hunt/Hive TCG et 129 dossiers d'armes Tantalus **à vérifier**. Le codex filtre séparément les références principales, les cartes TCG et les dossiers de recherche ; aucun de ces imports ne devient automatiquement une unité jouable ou un objet officiellement certifié.
+
+## Correctif de provenance (audit v0.3)
+
+La reconstruction possède 18 profils, **4 directement vérifiés dans les extraits indexés du HTML v0.30** et **14 provisoires**, inventoriés pour maintenir un match jouable. Les valeurs provisoires n'ont pas été présentées comme exactes. Le code affiche « PROFIL PROVISOIRE » pour ces unités. L'archive originale v0.30 doit toujours être restaurée pour tester les modes et la fidélité visuelle.

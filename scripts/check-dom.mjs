@@ -16,3 +16,5 @@ for(const fn of ['startMatch','endTurn','renderCodex','syncCodexTypes','render',
 if(!/canvas\s+id="field"\s+width="1008"\s+height="588"/.test(html))throw Error('Taille terrain modifiée sans contrôle');
 if(!css.includes('@media(max-width:620px)'))throw Error('Feuille tactile manquante');
 console.log('OK DOM/ressources/fonctions : '+ids.length+' IDs.');
+
+if(!code.includes("sourceVerification!=='verified_indexed_source_fragment'"))throw Error('Avertissement des profils provisoires absent');
