@@ -17,6 +17,7 @@ const FALLBACK={
  bad_blood:{id:'prototype_bad_blood',name:'Chasseur renégat',entityId:'species.yautja',stats:{movement:6,hp:11,strength:4,agility:3,technique:2,armor:1}},
  synthetics:{id:'prototype_synthetic',name:'Unité synthétique',entityId:'character.bishop',stats:{movement:5,hp:11,strength:3,agility:2,technique:5,armor:1}}
 };
+let unifiedBridge=null;
 let catalog=null,profiles=null,crossGame=null,match=null,selected=null,intent='move',busy=false;
 const storeKey='avp-blood-arena-bridge-0.1';
 function safeSave(s){try{localStorage.setItem(storeKey,JSON.stringify(s));}catch(_e){}}
@@ -191,13 +192,48 @@ function renderCodex(){
  card.className='codex-card';kind.textContent=e.type.toUpperCase().replaceAll('_',' ')+' · '+e.context;title.textContent=e.name;note.textContent=e.note;src.className='source';src.textContent='SOURCE : '+e.origin+(e.status?' · '+e.status:'');card.append(kind,title,note,src);root.append(card);
  }
 }
+
+function renderUnifiedBridge(){
+ const root=byId('bridgeProfiles');
+ root.replaceChildren();
+ if(!unifiedBridge){byId('bridgeCount').textContent='Données du registre en attente de lecture.';return;}
+ const counts=unifiedBridge.counts;
+ byId('bridgeCount').textContent=counts.linked+' rattachements documentaires · '+counts.unresolved+' identités à documenter · '+counts.verifiedLegacy+' profils v0.30 relus / '+counts.provisionalLegacy+' reconstructions.';
+ const entries=[...unifiedBridge.profiles.map(p=>({...p,linked:true})),...unifiedBridge.unresolved.map(p=>({...p,linked:false}))];
+ for(const e of entries){
+  const card=document.createElement('article'),kind=document.createElement('small'),heading=document.createElement('h3'),note=document.createElement('p'),origin=document.createElement('p');
+  card.className='codex-card';
+  kind.textContent=e.linked?'IDENTITÉ COMMUNE · '+e.identityCategory.toUpperCase():'RECHERCHE EN COURS · SANS CORRESPONDANCE';
+  heading.textContent=e.localName;
+  note.textContent=e.linked?e.identityName+' ('+e.identityId+') · '+e.qualifier:e.reason;
+  origin.className='source';
+  const verification=e.sourceVerification==='verified_indexed_source_fragment'?'FRAGMENT V0.30 RELU':'RECONSTRUCTION NON CERTIFIÉE';
+  const references=e.linked?(e.sources||[]).map(s=>s.repository+' · '+s.path+' @'+s.blobSha.slice(0,8)).slice(0,3).join(' / '):'ID LOCAL : '+e.localId;
+  origin.textContent=verification+' · '+references;
+  card.append(kind,heading,note,origin);
+  root.append(card);
+ }
+}
+async function loadUnifiedBridge(){
+ try{
+  const r=await fetch('./data/alien-base.unified-blood.json');
+  if(!r.ok)throw Error('HTTP '+r.status);
+  const j=await r.json();
+  if(j.consumer!=='avp-blood-arena'||!Array.isArray(j.profiles)||!Array.isArray(j.unresolved))throw Error('format inattendu');
+  unifiedBridge=j;
+  renderUnifiedBridge();
+ }catch(e){
+  byId('bridgeCount').textContent='Pont de synchronisation indisponible : '+e.message+'. Le jeu reste jouable avec les instantanés existants.';
+ }
+}
+
 async function boot(){
  try{
  const res=await Promise.all([fetch('./data/alien-base.snapshot.json'),fetch('./data/blood-arena.profiles.json'),fetch('./data/cross-game-references.json')]);for(const r of res)if(!r.ok)throw Error('HTTP '+r.status);catalog=await res[0].json();profiles=await res[1].json();crossGame=await res[2].json();
  if(!Array.isArray(catalog.entities)||!Array.isArray(profiles.records)||!Array.isArray(crossGame.cards)||!Array.isArray(crossGame.researchWeapons))throw Error('format inattendu');
  byId('dataStatus').textContent=catalog.entities.length+' références, '+profiles.records.length+' profils (4 confirmés, 14 provisoires), '+crossGame.cards.length+' cartes TCG et '+crossGame.researchWeapons.length+' armes à vérifier';
  for(const [key,f] of Object.entries(FACTIONS)){for(const id of ['teamPick','opponentPick']){const opt=document.createElement('option');opt.value=key;opt.textContent=f.name;byId(id).append(opt);}}byId('teamPick').value='uscm';byId('opponentPick').value='hive';
- syncCodexTypes();renderCodex();
+ syncCodexTypes();renderCodex();void loadUnifiedBridge();
  }catch(e){byId('dataStatus').textContent='ERREUR DE LECTURE : '+e.message;byId('startButton').disabled=true;msg('Les fichiers de la base sont inaccessibles.');}
  scoreStats();
 }
@@ -209,6 +245,8 @@ byId('endTurn').addEventListener('click',endTurn);
 byId('menuButton').addEventListener('click',()=>{if(!match||match.finished||confirm('Abandonner le match en cours ?')){match=null;selected=null;byId('match').hidden=true;byId('menu').hidden=false;byId('selectionHelp').textContent='Sélectionne ton équipe et lance une rencontre.';}});
 byId('openCodex').addEventListener('click',()=>showModal('codexModal'));byId('closeCodex').addEventListener('click',()=>hideModal('codexModal'));
 byId('openHelp').addEventListener('click',()=>showModal('helpModal'));byId('closeHelp').addEventListener('click',()=>hideModal('helpModal'));
+byId('openBridge').addEventListener('click',()=>{showModal('bridgeModal');renderUnifiedBridge();});byId('closeBridge').addEventListener('click',()=>hideModal('bridgeModal'));
+
 byId('codexQuery').addEventListener('input',renderCodex);byId('codexType').addEventListener('change',renderCodex);byId('codexScope').addEventListener('change',()=>{syncCodexTypes();renderCodex();});
-document.addEventListener('keydown',e=>{if(e.key==='Escape'){hideModal('helpModal');hideModal('codexModal');}if(e.key===' '&&match&&!match.finished&&!byId('codexModal').hidden===false){e.preventDefault();endTurn();}});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){for(const modal of ['helpModal','codexModal','bridgeModal'])hideModal(modal);}if(e.key===' '&&match&&!match.finished&&['helpModal','codexModal','bridgeModal'].every(id=>byId(id).hidden)&&!['BUTTON','INPUT','SELECT','TEXTAREA'].includes(document.activeElement?.tagName)){e.preventDefault();endTurn();}});
 boot();
