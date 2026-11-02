@@ -53,3 +53,11 @@ Le script refuse les copies tronquées et produit `play/v0.36/index.html` et une
 ### Hébergement
 
 Le projet Vercel existant `avp-blood-arena` est déjà lié au dépôt GitHub sous l'équipe `darknigthmares-projects`. Un lien Git n'est pas un déploiement : seule une build en état `READY` et une vérification du domaine confirmeront une mise en ligne.
+
+## Référentiel unifié v2 — instantané du 2 novembre 2026
+
+Le volet **REGISTRE UNIFIÉ V2** ajoute **494 notices documentaires** depuis la branche revue d'Alien_base (#21 → #22 → #24 et PR de pont Blood Arena), sur **652 identités**, dont **158 cartes TCG** consultables séparément. Le moteur conserve le catalogue v1 de 68 notices et son gameplay inchangé. La synchronisation est une **prévisualisation issue de PR encore ouvertes**, pas une fusion confirmée dans `Alien_base/main`.
+
+L'instantané `data/alien-base.registry-index.json` ne contient que les IDs, noms, catégories et classifications : **pas de secrets, pas de provenance privée, pas de statistiques, pas d'import de capacités ou d'actifs**. Les sept correspondances du roster restent validées et onze profils demeurent en attente ; `data/alien-base.unified-blood.json` conserve les preuves et sa SHA Git blob d'origine. Les scripts `npm test` vérifient les empreintes partagées et l'absence d'effet automatique sur les 18 profils et leurs sauvegardes.
+
+Les mises à jour connexes Hive Ascension (#23) restent parallèles à la chaîne Apex (#24) et nécessiteront une réconciliation distincte avant fusion. La version originale 0.36 n'est toujours pas restaurée.
