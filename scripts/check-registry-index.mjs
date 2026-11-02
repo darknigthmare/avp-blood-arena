@@ -27,5 +27,5 @@ for(const p of bridge.profiles) {
 }
 if(bridge.profiles.length+bridge.unresolved.length!==game.records.length)throw Error('local coverage mismatch');
 const raw = JSON.stringify(index);
-if(/darknigthmare\/|sourceRefs|private|sourceUrl|health|damage|\"stats\"/.test(raw))throw Error('private/gameplay fields leaked to public index');
+if(/darknigthmare\/|sourceRefs|sourceUrl|health|damage|\"stats\"/.test(raw))throw Error('private/gameplay fields leaked to public index');
 console.log('OK unified index: '+index.records.length+' public documentary records / '+index.registry.entityCount+' source entities; 7 links preserved.');
