@@ -1,0 +1,2979 @@
+{
+  "schemaVersion": "1.0.0",
+  "consumer": "avp-blood-arena",
+  "scope": "documentary-identities-only; not playable; no auto-unlock",
+  "registry": {
+    "entityCount": 652,
+    "documentaryCount": 494,
+    "gameCards": 158,
+    "entityBlobSha": "37db6ff37bb10390b49bb161c0b7d2feb3b2dd7c",
+    "syncMode": "reviewed-static-export-no-private-runtime-fetch",
+    "sourceStatus": "unmerged-unified-registry-preview"
+  },
+  "records": [
+    {
+      "id": "bio.automaton.bombardier",
+      "name": "Bombardier",
+      "category": "organism",
+      "classification": "game-roster-reference"
+    },
+    {
+      "id": "bio.automaton.bulwark",
+      "name": "Bulwark",
+      "category": "organism",
+      "classification": "game-roster-reference"
+    },
+    {
+      "id": "bio.automaton.huntsman",
+      "name": "Huntsman",
+      "category": "organism",
+      "classification": "game-roster-reference"
+    },
+    {
+      "id": "bio.automaton.igniter",
+      "name": "Igniter",
+      "category": "organism",
+      "classification": "game-roster-reference"
+    },
+    {
+      "id": "bio.automaton.peacekeeper",
+      "name": "Peacekeeper",
+      "category": "organism",
+      "classification": "game-roster-reference"
+    },
+    {
+      "id": "bio.automaton.spider",
+      "name": "Spider",
+      "category": "organism",
+      "classification": "game-roster-reference"
+    },
+    {
+      "id": "bio.fauna.ceto-reef-predator",
+      "name": "Ceto Reef Predator",
+      "category": "organism",
+      "classification": "project-source"
+    },
+    {
+      "id": "bio.fauna.korari-stalker",
+      "name": "Korari Stalker",
+      "category": "organism",
+      "classification": "project-source"
+    },
+    {
+      "id": "bio.fauna.tantalus-tunnel-vermin",
+      "name": "Tantalus Tunnel Vermin",
+      "category": "organism",
+      "classification": "project-source"
+    },
+    {
+      "id": "bio.fauna.wild-boar-host",
+      "name": "Wild Boar Host",
+      "category": "organism",
+      "classification": "project-source"
+    },
+    {
+      "id": "bio.human.atarax-controller",
+      "name": "ATARAX Controller",
+      "category": "organism",
+      "classification": "project-source"
+    },
+    {
+      "id": "bio.human.colonial-raider",
+      "name": "Colonial Raider",
+      "category": "organism",
+      "classification": "project-source"
+    },
+    {
+      "id": "bio.human.cult-host",
+      "name": "Cult Host",
+      "category": "organism",
+      "classification": "project-source"
+    },
+    {
+      "id": "bio.human.seegson-security",
+      "name": "Seegson Security",
+      "category": "organism",
+      "classification": "project-source"
+    },
+    {
+      "id": "bio.human.upp-vanguard",
+      "name": "UPP Vanguard",
+      "category": "organism",
+      "classification": "project-source"
+    },
+    {
+      "id": "bio.human.weyland-yutani-commando",
+      "name": "Weyland-Yutani Commando",
+      "category": "organism",
+      "classification": "project-source"
+    },
+    {
+      "id": "bio.hybrid.newborn",
+      "name": "Newborn",
+      "category": "organism",
+      "classification": "source-labelled-variant"
+    },
+    {
+      "id": "bio.pathogen.abomination",
+      "name": "Abomination",
+      "category": "organism",
+      "classification": "project-source"
+    },
+    {
+      "id": "bio.pathogen.deacon-line",
+      "name": "Deacon Line",
+      "category": "organism",
+      "classification": "project-source"
+    },
+    {
+      "id": "bio.pathogen.engineer-hybrid",
+      "name": "Engineer hybrid",
+      "category": "organism",
+      "classification": "game-roster-reference"
+    },
+    {
+      "id": "bio.pathogen.harbinger",
+      "name": "Harbinger",
+      "category": "organism",
+      "classification": "game-roster-reference"
+    },
+    {
+      "id": "bio.pathogen.neomorph",
+      "name": "Neomorph",
+      "category": "organism",
+      "classification": "project-source"
+    },
+    {
+      "id": "bio.pathogen.offspring",
+      "name": "Offspring",
+      "category": "organism",
+      "classification": "source-labelled-variant"
+    },
+    {
+      "id": "bio.pathogen.pathogen-blight",
+      "name": "Pathogen Blight",
+      "category": "organism",
+      "classification": "game-roster-reference"
+    },
+    {
+      "id": "bio.pathogen.pathogen-brute",
+      "name": "Pathogen Brute",
+      "category": "organism",
+      "classification": "game-roster-reference"
+    },
+    {
+      "id": "bio.pathogen.pathogen-mimic",
+      "name": "Pathogen Mimic",
+      "category": "organism",
+      "classification": "project-source"
+    },
+    {
+      "id": "bio.pathogen.pathogen-popper",
+      "name": "Pathogen Popper",
+      "category": "organism",
+      "classification": "game-roster-reference"
+    },
+    {
+      "id": "bio.pathogen.pathogen-runner",
+      "name": "Pathogen Runner",
+      "category": "organism",
+      "classification": "game-roster-reference"
+    },
+    {
+      "id": "bio.pathogen.protomorph",
+      "name": "Protomorph",
+      "category": "organism",
+      "classification": "project-source"
+    },
+    {
+      "id": "bio.pathogen.trilobite-echo",
+      "name": "Trilobite Echo",
+      "category": "organism",
+      "classification": "project-source"
+    },
+    {
+      "id": "bio.synthetic.combat-synthetic",
+      "name": "Combat Synthetic",
+      "category": "organism",
+      "classification": "project-source"
+    },
+    {
+      "id": "bio.synthetic.containment",
+      "name": "Containment",
+      "category": "organism",
+      "classification": "game-roster-reference"
+    },
+    {
+      "id": "bio.synthetic.detonator",
+      "name": "Detonator",
+      "category": "organism",
+      "classification": "game-roster-reference"
+    },
+    {
+      "id": "bio.synthetic.enforcer",
+      "name": "Enforcer",
+      "category": "organism",
+      "classification": "game-roster-reference"
+    },
+    {
+      "id": "bio.synthetic.heavy",
+      "name": "Heavy",
+      "category": "organism",
+      "classification": "game-roster-reference"
+    },
+    {
+      "id": "bio.synthetic.incinerator",
+      "name": "Incinerator",
+      "category": "organism",
+      "classification": "game-roster-reference"
+    },
+    {
+      "id": "bio.synthetic.sniper",
+      "name": "Sniper",
+      "category": "organism",
+      "classification": "game-roster-reference"
+    },
+    {
+      "id": "bio.synthetic.trooper",
+      "name": "Trooper",
+      "category": "organism",
+      "classification": "game-roster-reference"
+    },
+    {
+      "id": "bio.synthetic.working-joe",
+      "name": "Working Joe",
+      "category": "organism",
+      "classification": "project-source"
+    },
+    {
+      "id": "bio.xenomorph.arcology-lurker",
+      "name": "Arcology Lurker",
+      "category": "organism",
+      "classification": "project-source"
+    },
+    {
+      "id": "bio.xenomorph.atarax-ripper",
+      "name": "ATARAX Ripper",
+      "category": "organism",
+      "classification": "project-source"
+    },
+    {
+      "id": "bio.xenomorph.big-chap",
+      "name": "Drone / Big Chap",
+      "category": "organism",
+      "classification": "project-source"
+    },
+    {
+      "id": "bio.xenomorph.boiler",
+      "name": "Boiler",
+      "category": "organism",
+      "classification": "project-source"
+    },
+    {
+      "id": "bio.xenomorph.burster",
+      "name": "Burster",
+      "category": "organism",
+      "classification": "project-source"
+    },
+    {
+      "id": "bio.xenomorph.caravan-stalker",
+      "name": "Caravan Stalker",
+      "category": "organism",
+      "classification": "project-source"
+    },
+    {
+      "id": "bio.xenomorph.carrier",
+      "name": "Carrier",
+      "category": "organism",
+      "classification": "project-source"
+    },
+    {
+      "id": "bio.xenomorph.chestburster",
+      "name": "Chestburster",
+      "category": "organism",
+      "classification": "project-source"
+    },
+    {
+      "id": "bio.xenomorph.crusher",
+      "name": "Crusher",
+      "category": "organism",
+      "classification": "project-source"
+    },
+    {
+      "id": "bio.xenomorph.drone",
+      "name": "Drone",
+      "category": "organism",
+      "classification": "project-source"
+    },
+    {
+      "id": "bio.xenomorph.dust-runner",
+      "name": "Dust Runner",
+      "category": "organism",
+      "classification": "project-source"
+    },
+    {
+      "id": "bio.xenomorph.exploder",
+      "name": "Exploder",
+      "category": "organism",
+      "classification": "game-roster-reference"
+    },
+    {
+      "id": "bio.xenomorph.facehugger",
+      "name": "Facehugger",
+      "category": "organism",
+      "classification": "project-source"
+    },
+    {
+      "id": "bio.xenomorph.foundry-crusher",
+      "name": "Foundry Crusher",
+      "category": "organism",
+      "classification": "project-source"
+    },
+    {
+      "id": "bio.xenomorph.foundry-drone",
+      "name": "Foundry Drone",
+      "category": "organism",
+      "classification": "project-source"
+    },
+    {
+      "id": "bio.xenomorph.k-series-yellow-xenomorph",
+      "name": "K-Series Yellow Xenomorph",
+      "category": "organism",
+      "classification": "project-source"
+    },
+    {
+      "id": "bio.xenomorph.lurker",
+      "name": "Lurker",
+      "category": "organism",
+      "classification": "project-source"
+    },
+    {
+      "id": "bio.xenomorph.monica-line",
+      "name": "Monica Line",
+      "category": "organism",
+      "classification": "project-source"
+    },
+    {
+      "id": "bio.xenomorph.neuro-xeno-drone",
+      "name": "Neuro-Xeno Drone",
+      "category": "organism",
+      "classification": "project-source"
+    },
+    {
+      "id": "bio.xenomorph.ovomorph",
+      "name": "Ovomorphe",
+      "category": "organism",
+      "classification": "project-source"
+    },
+    {
+      "id": "bio.xenomorph.pale-crucible-hunter",
+      "name": "Pale Crucible Hunter",
+      "category": "organism",
+      "classification": "project-source"
+    },
+    {
+      "id": "bio.xenomorph.praetorian",
+      "name": "Prétorien",
+      "category": "organism",
+      "classification": "project-source"
+    },
+    {
+      "id": "bio.xenomorph.predalien",
+      "name": "Predalien",
+      "category": "organism",
+      "classification": "source-labelled-variant"
+    },
+    {
+      "id": "bio.xenomorph.prowler",
+      "name": "Prowler",
+      "category": "organism",
+      "classification": "project-source"
+    },
+    {
+      "id": "bio.xenomorph.queen",
+      "name": "Reine Xénomorphe",
+      "category": "organism",
+      "classification": "project-source"
+    },
+    {
+      "id": "bio.xenomorph.ravager",
+      "name": "Ravager",
+      "category": "organism",
+      "classification": "project-source"
+    },
+    {
+      "id": "bio.xenomorph.red-xenomorph",
+      "name": "Red Xenomorph",
+      "category": "organism",
+      "classification": "project-source"
+    },
+    {
+      "id": "bio.xenomorph.reef-spitter",
+      "name": "Reef Spitter",
+      "category": "organism",
+      "classification": "project-source"
+    },
+    {
+      "id": "bio.xenomorph.reef-stalker",
+      "name": "Reef Stalker",
+      "category": "organism",
+      "classification": "project-source"
+    },
+    {
+      "id": "bio.xenomorph.ripper-queen",
+      "name": "Ripper Queen",
+      "category": "organism",
+      "classification": "project-source"
+    },
+    {
+      "id": "bio.xenomorph.runner",
+      "name": "Runner",
+      "category": "organism",
+      "classification": "project-source"
+    },
+    {
+      "id": "bio.xenomorph.salvage-hive-brute",
+      "name": "Salvage Hive Brute",
+      "category": "organism",
+      "classification": "project-source"
+    },
+    {
+      "id": "bio.xenomorph.siege-royal",
+      "name": "Siege Royal",
+      "category": "organism",
+      "classification": "project-source"
+    },
+    {
+      "id": "bio.xenomorph.specimen-six-line",
+      "name": "Specimen Six Line",
+      "category": "organism",
+      "classification": "project-source"
+    },
+    {
+      "id": "bio.xenomorph.spitter",
+      "name": "Spitter",
+      "category": "organism",
+      "classification": "project-source"
+    },
+    {
+      "id": "bio.xenomorph.warden",
+      "name": "Warden",
+      "category": "organism",
+      "classification": "game-roster-reference"
+    },
+    {
+      "id": "bio.xenomorph.warrior",
+      "name": "Warrior",
+      "category": "organism",
+      "classification": "project-source"
+    },
+    {
+      "id": "bio.xenomorph.xenoborg",
+      "name": "Xenoborg",
+      "category": "organism",
+      "classification": "project-source"
+    },
+    {
+      "id": "character.reference.alan-decker",
+      "name": "Alan Decker",
+      "category": "character",
+      "classification": "documentary-visual-intent-not-likeness-verified"
+    },
+    {
+      "id": "character.reference.albrecht",
+      "name": "Albrecht",
+      "category": "character",
+      "classification": "documentary-visual-intent-not-likeness-verified"
+    },
+    {
+      "id": "character.reference.alec",
+      "name": "Alec",
+      "category": "character",
+      "classification": "documentary-visual-intent-not-likeness-verified"
+    },
+    {
+      "id": "character.reference.andrea-rollins",
+      "name": "Andrea Rollins",
+      "category": "character",
+      "classification": "documentary-visual-intent-not-likeness-verified"
+    },
+    {
+      "id": "character.reference.anne-jorden",
+      "name": "Anne Jorden",
+      "category": "character",
+      "classification": "documentary-visual-intent-not-likeness-verified"
+    },
+    {
+      "id": "character.reference.chris-hooper",
+      "name": "Chris Hooper",
+      "category": "character",
+      "classification": "documentary-visual-intent-not-likeness-verified"
+    },
+    {
+      "id": "character.reference.ellen-ripley",
+      "name": "Ellen Ripley",
+      "category": "character",
+      "classification": "documentary-visual-intent-not-likeness-verified"
+    },
+    {
+      "id": "character.reference.hannah",
+      "name": "Hannah",
+      "category": "character",
+      "classification": "documentary-visual-intent-not-likeness-verified"
+    },
+    {
+      "id": "character.reference.hope",
+      "name": "Hope",
+      "category": "character",
+      "classification": "documentary-visual-intent-not-likeness-verified"
+    },
+    {
+      "id": "character.reference.julie",
+      "name": "Julie",
+      "category": "character",
+      "classification": "documentary-visual-intent-not-likeness-verified"
+    },
+    {
+      "id": "character.reference.lorraine-hawkes",
+      "name": "Lorraine Hawkes",
+      "category": "character",
+      "classification": "documentary-visual-intent-not-likeness-verified"
+    },
+    {
+      "id": "character.reference.maggie",
+      "name": "Maggie",
+      "category": "character",
+      "classification": "documentary-visual-intent-not-likeness-verified"
+    },
+    {
+      "id": "character.reference.mari",
+      "name": "Mari",
+      "category": "character",
+      "classification": "documentary-visual-intent-not-likeness-verified"
+    },
+    {
+      "id": "character.reference.nass",
+      "name": "Nass",
+      "category": "character",
+      "classification": "documentary-visual-intent-not-likeness-verified"
+    },
+    {
+      "id": "character.reference.rolly",
+      "name": "Rolly",
+      "category": "character",
+      "classification": "documentary-visual-intent-not-likeness-verified"
+    },
+    {
+      "id": "character.reference.russell-russ-jorden",
+      "name": "Russell « Russ » Jorden",
+      "category": "character",
+      "classification": "documentary-visual-intent-not-likeness-verified"
+    },
+    {
+      "id": "character.reference.sturgis",
+      "name": "Sturgis",
+      "category": "character",
+      "classification": "documentary-visual-intent-not-likeness-verified"
+    },
+    {
+      "id": "character.reference.ward",
+      "name": "Ward",
+      "category": "character",
+      "classification": "documentary-visual-intent-not-likeness-verified"
+    },
+    {
+      "id": "character.tantalus.asha-mbaye",
+      "name": "Asha Mbaye",
+      "category": "character",
+      "classification": "tantalus-original-character"
+    },
+    {
+      "id": "character.tantalus.bishop-9",
+      "name": "BISHOP-9",
+      "category": "character",
+      "classification": "tantalus-original-character"
+    },
+    {
+      "id": "character.tantalus.cal-mercer",
+      "name": "Cal Mercer",
+      "category": "character",
+      "classification": "tantalus-original-character"
+    },
+    {
+      "id": "character.tantalus.david-8r",
+      "name": "DAVID-8R",
+      "category": "character",
+      "classification": "tantalus-original-character"
+    },
+    {
+      "id": "character.tantalus.echo-a",
+      "name": "ECHO-A",
+      "category": "character",
+      "classification": "tantalus-original-character"
+    },
+    {
+      "id": "character.tantalus.idris-kwan",
+      "name": "Idris Kwan",
+      "category": "character",
+      "classification": "tantalus-original-character"
+    },
+    {
+      "id": "character.tantalus.inez-harlow",
+      "name": "Inez Harlow",
+      "category": "character",
+      "classification": "tantalus-original-character"
+    },
+    {
+      "id": "character.tantalus.jun-park",
+      "name": "Jun Park",
+      "category": "character",
+      "classification": "tantalus-original-character"
+    },
+    {
+      "id": "character.tantalus.leila-s-rensen",
+      "name": "Leila Sørensen",
+      "category": "character",
+      "classification": "tantalus-original-character"
+    },
+    {
+      "id": "character.tantalus.maksim-orlov",
+      "name": "Maksim Orlov",
+      "category": "character",
+      "classification": "tantalus-original-character"
+    },
+    {
+      "id": "character.tantalus.mara-vega",
+      "name": "Mara Vega",
+      "category": "character",
+      "classification": "tantalus-original-character"
+    },
+    {
+      "id": "character.tantalus.noor-okafor",
+      "name": "Noor Okafor",
+      "category": "character",
+      "classification": "tantalus-original-character"
+    },
+    {
+      "id": "character.tantalus.pablo-reyes",
+      "name": "Pablo Reyes",
+      "category": "character",
+      "classification": "tantalus-original-character"
+    },
+    {
+      "id": "character.tantalus.rook",
+      "name": "Rook",
+      "category": "character",
+      "classification": "tantalus-original-character"
+    },
+    {
+      "id": "character.tantalus.sanaa-doyle",
+      "name": "Sanaa Doyle",
+      "category": "character",
+      "classification": "tantalus-original-character"
+    },
+    {
+      "id": "character.tantalus.tamsin-velez",
+      "name": "Tamsin Velez",
+      "category": "character",
+      "classification": "tantalus-original-character"
+    },
+    {
+      "id": "character.yautja.alpha_predator",
+      "name": "ALPHA PREDATOR (HUNTING GROUNDS)",
+      "category": "character",
+      "classification": "game-character-adaptation"
+    },
+    {
+      "id": "character.yautja.berserker_2010",
+      "name": "Berserker Predator",
+      "category": "character",
+      "classification": "apex-declared-media-reference-review-required"
+    },
+    {
+      "id": "character.yautja.celtic_avp_2004",
+      "name": "Celtic Predator",
+      "category": "character",
+      "classification": "apex-declared-media-reference-review-required"
+    },
+    {
+      "id": "character.yautja.chopper_avp_2004",
+      "name": "Chopper Predator",
+      "category": "character",
+      "classification": "apex-declared-media-reference-review-required"
+    },
+    {
+      "id": "character.yautja.city_hunter",
+      "name": "CITY HUNTER (1990)",
+      "category": "character",
+      "classification": "game-character-adaptation"
+    },
+    {
+      "id": "character.yautja.dek_badlands_2025",
+      "name": "Dek",
+      "category": "character",
+      "classification": "apex-declared-media-reference-review-required"
+    },
+    {
+      "id": "character.yautja.elder_lost_tribe_1990",
+      "name": "Ancien du Lost Tribe",
+      "category": "character",
+      "classification": "apex-declared-media-reference-review-required"
+    },
+    {
+      "id": "character.yautja.falconer_2010",
+      "name": "Falconer Predator",
+      "category": "character",
+      "classification": "apex-declared-media-reference-review-required"
+    },
+    {
+      "id": "character.yautja.feral_predator",
+      "name": "FERAL PREDATOR (PREY 2022)",
+      "category": "character",
+      "classification": "game-character-adaptation"
+    },
+    {
+      "id": "character.yautja.fugitive_2018",
+      "name": "Fugitive Predator",
+      "category": "character",
+      "classification": "apex-declared-media-reference-review-required"
+    },
+    {
+      "id": "character.yautja.jungle_hunter",
+      "name": "JUNGLE HUNTER (1987)",
+      "category": "character",
+      "classification": "game-character-adaptation"
+    },
+    {
+      "id": "character.yautja.kok_feudal_hunter_2025",
+      "name": "Chasseur du Japon féodal",
+      "category": "character",
+      "classification": "apex-declared-media-reference-review-required"
+    },
+    {
+      "id": "character.yautja.kok_viking_hunter_2025",
+      "name": "Chasseur de l’ère viking",
+      "category": "character",
+      "classification": "apex-declared-media-reference-review-required"
+    },
+    {
+      "id": "character.yautja.kok_wartime_hunter_2025",
+      "name": "Chasseur de l’ère aérienne",
+      "category": "character",
+      "classification": "apex-declared-media-reference-review-required"
+    },
+    {
+      "id": "character.yautja.kwei_badlands_2025",
+      "name": "Kwei",
+      "category": "character",
+      "classification": "apex-declared-media-reference-review-required"
+    },
+    {
+      "id": "character.yautja.samurai_predator",
+      "name": "SAMURAI PREDATOR (PHG DLC)",
+      "category": "character",
+      "classification": "game-character-adaptation"
+    },
+    {
+      "id": "character.yautja.scar_avp_2004",
+      "name": "Scar Predator",
+      "category": "character",
+      "classification": "apex-declared-media-reference-review-required"
+    },
+    {
+      "id": "character.yautja.tracker_2010",
+      "name": "Tracker Predator",
+      "category": "character",
+      "classification": "apex-declared-media-reference-review-required"
+    },
+    {
+      "id": "character.yautja.viking_predator",
+      "name": "VIKING PREDATOR (PHG DLC)",
+      "category": "character",
+      "classification": "game-character-adaptation"
+    },
+    {
+      "id": "character.yautja.wolf_predator",
+      "name": "WOLF PREDATOR (AVP REQUIEM)",
+      "category": "character",
+      "classification": "game-character-adaptation"
+    },
+    {
+      "id": "faction.atarax",
+      "name": "ATARAX Directorate",
+      "category": "faction",
+      "classification": "project-source"
+    },
+    {
+      "id": "faction.colonists",
+      "name": "Frontier Colonies",
+      "category": "faction",
+      "classification": "project-source"
+    },
+    {
+      "id": "faction.crucible",
+      "name": "Crucible Salvage Compact",
+      "category": "faction",
+      "classification": "project-source"
+    },
+    {
+      "id": "faction.cult",
+      "name": "Children of the Perfected Host",
+      "category": "faction",
+      "classification": "project-source"
+    },
+    {
+      "id": "faction.echo-9",
+      "name": "Echo-9",
+      "category": "faction",
+      "classification": "project-source"
+    },
+    {
+      "id": "faction.hyperdyne",
+      "name": "Hyperdyne Systems",
+      "category": "faction",
+      "classification": "project-source"
+    },
+    {
+      "id": "faction.k-series",
+      "name": "K-Series Brood",
+      "category": "faction",
+      "classification": "project-source"
+    },
+    {
+      "id": "faction.red-hive",
+      "name": "Red Hive",
+      "category": "faction",
+      "classification": "project-source"
+    },
+    {
+      "id": "faction.seegson",
+      "name": "Seegson",
+      "category": "faction",
+      "classification": "project-source"
+    },
+    {
+      "id": "faction.upp",
+      "name": "Union of Progressive Peoples",
+      "category": "faction",
+      "classification": "project-source"
+    },
+    {
+      "id": "faction.uscm",
+      "name": "United States Colonial Marine Corps",
+      "category": "faction",
+      "classification": "project-source"
+    },
+    {
+      "id": "faction.weyland-yutani",
+      "name": "Weyland-Yutani",
+      "category": "faction",
+      "classification": "project-source"
+    },
+    {
+      "id": "ha.bio.burster",
+      "name": "Burster",
+      "category": "organism",
+      "classification": "hive-ascension-specific-variant"
+    },
+    {
+      "id": "ha.bio.crusher",
+      "name": "Crusher",
+      "category": "organism",
+      "classification": "hive-ascension-specific-variant"
+    },
+    {
+      "id": "ha.bio.offspring",
+      "name": "Offspring (Hybride Z-01)",
+      "category": "organism",
+      "classification": "hive-ascension-specific-variant"
+    },
+    {
+      "id": "ha.bio.palatine",
+      "name": "Palatine (Garde Royal Suprême)",
+      "category": "organism",
+      "classification": "hive-ascension-specific-variant"
+    },
+    {
+      "id": "ha.bio.praetorian",
+      "name": "Praetorian",
+      "category": "organism",
+      "classification": "hive-ascension-specific-variant"
+    },
+    {
+      "id": "ha.bio.prowler",
+      "name": "Prowler",
+      "category": "organism",
+      "classification": "hive-ascension-specific-variant"
+    },
+    {
+      "id": "ha.bio.royal-facehugger",
+      "name": "Superfacehugger Royal",
+      "category": "organism",
+      "classification": "hive-ascension-specific-variant"
+    },
+    {
+      "id": "ha.bio.runner",
+      "name": "Runner",
+      "category": "organism",
+      "classification": "hive-ascension-specific-variant"
+    },
+    {
+      "id": "ha.bio.spitter",
+      "name": "Spitter",
+      "category": "organism",
+      "classification": "hive-ascension-specific-variant"
+    },
+    {
+      "id": "ha.bio.worker",
+      "name": "Worker",
+      "category": "organism",
+      "classification": "hive-ascension-specific-variant"
+    },
+    {
+      "id": "ha.boss.aster-rho",
+      "name": "Surveillante Aster Rho",
+      "category": "boss",
+      "classification": "hive-ascension-boss"
+    },
+    {
+      "id": "ha.boss.briareos-7",
+      "name": "BRIAREOS-7",
+      "category": "boss",
+      "classification": "hive-ascension-boss"
+    },
+    {
+      "id": "ha.boss.mantis-4",
+      "name": "MANTIS-4",
+      "category": "boss",
+      "classification": "hive-ascension-boss"
+    },
+    {
+      "id": "ha.boss.palimpseste",
+      "name": "PALIMPSESTE",
+      "category": "boss",
+      "classification": "hive-ascension-boss"
+    },
+    {
+      "id": "ha.equipment.balise-de-pistage",
+      "name": "Balise de pistage",
+      "category": "equipment",
+      "classification": "hive-ascension-equipment-or-prop"
+    },
+    {
+      "id": "ha.equipment.balise-lumineuse",
+      "name": "Balise lumineuse",
+      "category": "equipment",
+      "classification": "hive-ascension-equipment-or-prop"
+    },
+    {
+      "id": "ha.equipment.canon-gyrostabilise-vigie",
+      "name": "Canon gyrostabilisé VIGIE",
+      "category": "equipment",
+      "classification": "hive-ascension-equipment-or-prop"
+    },
+    {
+      "id": "ha.equipment.capteur-optique",
+      "name": "Capteur optique",
+      "category": "equipment",
+      "classification": "hive-ascension-equipment-or-prop"
+    },
+    {
+      "id": "ha.equipment.carabine-cinetique-r-9",
+      "name": "Carabine cinétique R-9",
+      "category": "equipment",
+      "classification": "hive-ascension-equipment-or-prop"
+    },
+    {
+      "id": "ha.equipment.cle-a-choc",
+      "name": "Clé à choc",
+      "category": "equipment",
+      "classification": "hive-ascension-equipment-or-prop"
+    },
+    {
+      "id": "ha.equipment.detecteur-inertiel",
+      "name": "Détecteur inertiel",
+      "category": "equipment",
+      "classification": "hive-ascension-equipment-or-prop"
+    },
+    {
+      "id": "ha.equipment.filet-electrostatique",
+      "name": "Filet électrostatique",
+      "category": "equipment",
+      "classification": "hive-ascension-equipment-or-prop"
+    },
+    {
+      "id": "ha.equipment.fusil-automatique-k-12",
+      "name": "Fusil automatique K-12",
+      "category": "equipment",
+      "classification": "hive-ascension-equipment-or-prop"
+    },
+    {
+      "id": "ha.equipment.injecteur-sedatif",
+      "name": "Injecteur sédatif",
+      "category": "equipment",
+      "classification": "hive-ascension-equipment-or-prop"
+    },
+    {
+      "id": "ha.equipment.interface-de-maintenance",
+      "name": "Interface de maintenance",
+      "category": "equipment",
+      "classification": "hive-ascension-equipment-or-prop"
+    },
+    {
+      "id": "ha.equipment.lampe-de-travail",
+      "name": "Lampe de travail",
+      "category": "equipment",
+      "classification": "hive-ascension-equipment-or-prop"
+    },
+    {
+      "id": "ha.equipment.lance-thermique-t-4",
+      "name": "Lance thermique T-4",
+      "category": "equipment",
+      "classification": "hive-ascension-equipment-or-prop"
+    },
+    {
+      "id": "ha.equipment.magasin-limite",
+      "name": "Magasin limité",
+      "category": "equipment",
+      "classification": "hive-ascension-equipment-or-prop"
+    },
+    {
+      "id": "ha.equipment.masque-etanche",
+      "name": "Masque étanche",
+      "category": "equipment",
+      "classification": "hive-ascension-equipment-or-prop"
+    },
+    {
+      "id": "ha.equipment.perche-de-contention",
+      "name": "Perche de contention",
+      "category": "equipment",
+      "classification": "hive-ascension-equipment-or-prop"
+    },
+    {
+      "id": "ha.equipment.pinces-industrielles",
+      "name": "Pinces industrielles",
+      "category": "equipment",
+      "classification": "hive-ascension-equipment-or-prop"
+    },
+    {
+      "id": "ha.equipment.projecteur-uv",
+      "name": "Projecteur UV",
+      "category": "equipment",
+      "classification": "hive-ascension-equipment-or-prop"
+    },
+    {
+      "id": "ha.equipment.reservoir-dorsal",
+      "name": "Réservoir dorsal",
+      "category": "equipment",
+      "classification": "hive-ascension-equipment-or-prop"
+    },
+    {
+      "id": "ha.equipment.scanner-biologique",
+      "name": "Scanner biologique",
+      "category": "equipment",
+      "classification": "hive-ascension-equipment-or-prop"
+    },
+    {
+      "id": "ha.equipment.visiere-de-suivi",
+      "name": "Visière de suivi",
+      "category": "equipment",
+      "classification": "hive-ascension-equipment-or-prop"
+    },
+    {
+      "id": "ha.faction.consortium-irise",
+      "name": "Consortium IRISE",
+      "category": "faction",
+      "classification": "hive-ascension-organization-or-operational-role"
+    },
+    {
+      "id": "ha.faction.defense-automatisee",
+      "name": "Défense automatisée",
+      "category": "faction",
+      "classification": "hive-ascension-organization-or-operational-role"
+    },
+    {
+      "id": "ha.faction.detachement-kappa",
+      "name": "Détachement KAPPA",
+      "category": "faction",
+      "classification": "hive-ascension-organization-or-operational-role"
+    },
+    {
+      "id": "ha.faction.personnel-mnemosyne",
+      "name": "Personnel MNEMOSYNE",
+      "category": "faction",
+      "classification": "hive-ascension-organization-or-operational-role"
+    },
+    {
+      "id": "ha.faction.surete-mnemosyne",
+      "name": "Sûreté MNEMOSYNE",
+      "category": "faction",
+      "classification": "hive-ascension-organization-or-operational-role"
+    },
+    {
+      "id": "ha.opposition.argos-synthetic",
+      "name": "Synthétique ARGOS",
+      "category": "opposition",
+      "classification": "hive-ascension-enemy-archetype"
+    },
+    {
+      "id": "ha.opposition.capture-commando",
+      "name": "Commando de récupération",
+      "category": "opposition",
+      "classification": "hive-ascension-enemy-archetype"
+    },
+    {
+      "id": "ha.opposition.gyro-gunner",
+      "name": "Artilleur gyrostabilisé",
+      "category": "opposition",
+      "classification": "hive-ascension-enemy-archetype"
+    },
+    {
+      "id": "ha.opposition.maintenance-technician",
+      "name": "Technicien de maintenance",
+      "category": "opposition",
+      "classification": "hive-ascension-enemy-archetype"
+    },
+    {
+      "id": "ha.opposition.orbital-rifleman",
+      "name": "Fusilier orbital",
+      "category": "opposition",
+      "classification": "hive-ascension-enemy-archetype"
+    },
+    {
+      "id": "ha.opposition.security-agent",
+      "name": "Agent de sûreté",
+      "category": "opposition",
+      "classification": "hive-ascension-enemy-archetype"
+    },
+    {
+      "id": "ha.opposition.security-drone",
+      "name": "Drone de sûreté LUCIOLE",
+      "category": "opposition",
+      "classification": "hive-ascension-enemy-archetype"
+    },
+    {
+      "id": "ha.opposition.sentry-turret",
+      "name": "Tourelle SENTINELLE",
+      "category": "opposition",
+      "classification": "hive-ascension-enemy-archetype"
+    },
+    {
+      "id": "ha.opposition.thermal-operator",
+      "name": "Opérateur thermique",
+      "category": "opposition",
+      "classification": "hive-ascension-enemy-archetype"
+    },
+    {
+      "id": "ha.opposition.xenobiologist",
+      "name": "Xénobiologiste IRISE",
+      "category": "opposition",
+      "classification": "hive-ascension-enemy-archetype"
+    },
+    {
+      "id": "ha.place.mnemosyne",
+      "name": "Station MNEMOSYNE",
+      "category": "place",
+      "classification": "hive-ascension-original-location"
+    },
+    {
+      "id": "ha.vessel.echo-12",
+      "name": "ÉCHO-12",
+      "category": "vessel",
+      "classification": "hive-ascension-original-tug-vessel"
+    },
+    {
+      "id": "item.357-magnum-revolver",
+      "name": ".357 Magnum Revolver",
+      "category": "equipment",
+      "classification": "project-source"
+    },
+    {
+      "id": "item.access-tuner",
+      "name": "Access Tuner",
+      "category": "equipment",
+      "classification": "project-source"
+    },
+    {
+      "id": "item.ak-4047-pulse-rifle",
+      "name": "AK-4047 Pulse Rifle",
+      "category": "equipment",
+      "classification": "project-source"
+    },
+    {
+      "id": "item.am-16-gruppa",
+      "name": "AM-16 Gruppa",
+      "category": "equipment",
+      "classification": "licensed-reference-project-adaptation"
+    },
+    {
+      "id": "item.ammo-satchel",
+      "name": "Ammo Satchel",
+      "category": "equipment",
+      "classification": "project-source"
+    },
+    {
+      "id": "item.ape-suit",
+      "name": "APE Suit",
+      "category": "equipment",
+      "classification": "project-source"
+    },
+    {
+      "id": "item.atarax-control-rig",
+      "name": "ATARAX Control Rig",
+      "category": "equipment",
+      "classification": "project-source"
+    },
+    {
+      "id": "item.bolt-gun",
+      "name": "Bolt Gun",
+      "category": "equipment",
+      "classification": "project-source"
+    },
+    {
+      "id": "item.catch-pole",
+      "name": "Catch Pole",
+      "category": "equipment",
+      "classification": "project-source"
+    },
+    {
+      "id": "item.colony-beacon",
+      "name": "Colony Beacon",
+      "category": "equipment",
+      "classification": "project-source"
+    },
+    {
+      "id": "item.combat-knife",
+      "name": "Combat Knife",
+      "category": "equipment",
+      "classification": "project-source"
+    },
+    {
+      "id": "item.compound-bow",
+      "name": "Compound Bow",
+      "category": "equipment",
+      "classification": "project-source"
+    },
+    {
+      "id": "item.cryo-lance",
+      "name": "Cryo Lance",
+      "category": "equipment",
+      "classification": "project-source"
+    },
+    {
+      "id": "item.cryo-mine",
+      "name": "Cryo Mine",
+      "category": "equipment",
+      "classification": "project-source"
+    },
+    {
+      "id": "item.cutting-torch",
+      "name": "Cutting Torch",
+      "category": "equipment",
+      "classification": "project-source"
+    },
+    {
+      "id": "item.dkt-59-misha",
+      "name": "DKT-59 Misha",
+      "category": "equipment",
+      "classification": "licensed-reference-project-adaptation"
+    },
+    {
+      "id": "item.drone-controller",
+      "name": "Drone Controller",
+      "category": "equipment",
+      "classification": "project-source"
+    },
+    {
+      "id": "item.eds-93-zadak-plasma-discharger",
+      "name": "EDS-93 Zadak Plasma Discharger",
+      "category": "equipment",
+      "classification": "licensed-reference-project-adaptation"
+    },
+    {
+      "id": "item.electroshock-trap",
+      "name": "Electroshock Trap",
+      "category": "equipment",
+      "classification": "project-source"
+    },
+    {
+      "id": "item.es-4-electroshock-pistol",
+      "name": "ES-4 Electroshock Pistol",
+      "category": "equipment",
+      "classification": "project-source"
+    },
+    {
+      "id": "item.evi-87-zvezda-plasma-rifle",
+      "name": "EVI-87 Zvezda Plasma Rifle",
+      "category": "equipment",
+      "classification": "licensed-reference-project-adaptation"
+    },
+    {
+      "id": "item.f44aa-pulse-rifle",
+      "name": "F44AA Pulse Rifle",
+      "category": "equipment",
+      "classification": "project-source"
+    },
+    {
+      "id": "item.fire-axe",
+      "name": "Fire Axe",
+      "category": "equipment",
+      "classification": "project-source"
+    },
+    {
+      "id": "item.flashlight",
+      "name": "Flashlight",
+      "category": "equipment",
+      "classification": "project-source"
+    },
+    {
+      "id": "item.foundry-nailgun",
+      "name": "Foundry Nailgun",
+      "category": "equipment",
+      "classification": "project-source"
+    },
+    {
+      "id": "item.frontier-revolver",
+      "name": "Frontier Revolver",
+      "category": "equipment",
+      "classification": "licensed-reference-project-adaptation"
+    },
+    {
+      "id": "item.harpoon-gun",
+      "name": "Harpoon Gun",
+      "category": "equipment",
+      "classification": "project-source"
+    },
+    {
+      "id": "item.hazmat-suit",
+      "name": "Hazmat Suit",
+      "category": "equipment",
+      "classification": "project-source"
+    },
+    {
+      "id": "item.heavy-pulse-rifle",
+      "name": "Heavy Pulse Rifle",
+      "category": "equipment",
+      "classification": "project-source"
+    },
+    {
+      "id": "item.heckler-koch-vp70",
+      "name": "Heckler & Koch VP70",
+      "category": "equipment",
+      "classification": "world-hive-wars-reference"
+    },
+    {
+      "id": "item.incinerator-fuel-pack",
+      "name": "Incinerator Fuel Pack",
+      "category": "equipment",
+      "classification": "project-source"
+    },
+    {
+      "id": "item.ithaca-model-37",
+      "name": "Ithaca Model 37",
+      "category": "equipment",
+      "classification": "world-hive-wars-reference"
+    },
+    {
+      "id": "item.kit-de-confinement-biologique",
+      "name": "Kit de confinement biologique",
+      "category": "equipment",
+      "classification": "world-hive-wars-reference"
+    },
+    {
+      "id": "item.kramer-short-barrel",
+      "name": "Kramer Short-Barrel",
+      "category": "equipment",
+      "classification": "licensed-reference-project-adaptation"
+    },
+    {
+      "id": "item.l33-pike",
+      "name": "L33 Pike",
+      "category": "equipment",
+      "classification": "licensed-reference-project-adaptation"
+    },
+    {
+      "id": "item.l59-minigun",
+      "name": "L59 Minigun",
+      "category": "equipment",
+      "classification": "licensed-reference-project-adaptation"
+    },
+    {
+      "id": "item.lem-mp11-stormsurge",
+      "name": "LEM MP11 Stormsurge",
+      "category": "equipment",
+      "classification": "licensed-reference-project-adaptation"
+    },
+    {
+      "id": "item.m12-rpg",
+      "name": "M12 RPG",
+      "category": "equipment",
+      "classification": "licensed-reference-project-adaptation"
+    },
+    {
+      "id": "item.m240-incinerator-unit",
+      "name": "M240 Incinerator Unit",
+      "category": "equipment",
+      "classification": "project-source"
+    },
+    {
+      "id": "item.m3-personnel-armor",
+      "name": "M3 Personnel Armor",
+      "category": "equipment",
+      "classification": "project-source"
+    },
+    {
+      "id": "item.m37a2-pump-shotgun",
+      "name": "M37A2 Pump Shotgun",
+      "category": "equipment",
+      "classification": "project-source"
+    },
+    {
+      "id": "item.m39-submachine-gun",
+      "name": "M39 Submachine Gun",
+      "category": "equipment",
+      "classification": "project-source"
+    },
+    {
+      "id": "item.m40-hedp-grenade",
+      "name": "M40 HEDP Grenade",
+      "category": "equipment",
+      "classification": "project-source"
+    },
+    {
+      "id": "item.m41a-pulse-rifle",
+      "name": "M41A Pulse Rifle",
+      "category": "equipment",
+      "classification": "project-source"
+    },
+    {
+      "id": "item.m41a2-pulse-rifle",
+      "name": "M41A2 Pulse Rifle",
+      "category": "equipment",
+      "classification": "project-source"
+    },
+    {
+      "id": "item.m42a-scope-rifle",
+      "name": "M42A Scope Rifle",
+      "category": "equipment",
+      "classification": "project-source"
+    },
+    {
+      "id": "item.m4a3-service-pistol",
+      "name": "M4A3 Service Pistol",
+      "category": "equipment",
+      "classification": "project-source"
+    },
+    {
+      "id": "item.m5-rpg",
+      "name": "M5 RPG",
+      "category": "equipment",
+      "classification": "project-source"
+    },
+    {
+      "id": "item.m51-breaching-scattergun",
+      "name": "M51 Breaching Scattergun",
+      "category": "equipment",
+      "classification": "licensed-reference-project-adaptation"
+    },
+    {
+      "id": "item.m56-smartgun",
+      "name": "M56 Smartgun",
+      "category": "equipment",
+      "classification": "project-source"
+    },
+    {
+      "id": "item.m6b-rocket-launcher",
+      "name": "M6B Rocket Launcher",
+      "category": "equipment",
+      "classification": "project-source"
+    },
+    {
+      "id": "item.m83-sadar",
+      "name": "M83 SADAR",
+      "category": "equipment",
+      "classification": "project-source"
+    },
+    {
+      "id": "item.m94-impact-grenade",
+      "name": "M94 Impact Grenade",
+      "category": "equipment",
+      "classification": "project-source"
+    },
+    {
+      "id": "item.maintenance-jack",
+      "name": "Maintenance Jack",
+      "category": "equipment",
+      "classification": "project-source"
+    },
+    {
+      "id": "item.mark-7-mod-2-cqb-pistol",
+      "name": "Mark 7 Mod 2 CQB Pistol",
+      "category": "equipment",
+      "classification": "licensed-reference-project-adaptation"
+    },
+    {
+      "id": "item.medkit",
+      "name": "Medkit",
+      "category": "equipment",
+      "classification": "project-source"
+    },
+    {
+      "id": "item.microburst",
+      "name": "Microburst",
+      "category": "equipment",
+      "classification": "licensed-reference-project-adaptation"
+    },
+    {
+      "id": "item.motion-tracker",
+      "name": "Motion Tracker",
+      "category": "equipment",
+      "classification": "project-source"
+    },
+    {
+      "id": "item.n79-eva-laser",
+      "name": "N79 EVA Laser",
+      "category": "equipment",
+      "classification": "licensed-reference-project-adaptation"
+    },
+    {
+      "id": "item.neuro-link-disruptor",
+      "name": "Neuro-Link Disruptor",
+      "category": "equipment",
+      "classification": "project-source"
+    },
+    {
+      "id": "item.neuro-link-helmet",
+      "name": "Neuro-Link Helmet",
+      "category": "equipment",
+      "classification": "project-source"
+    },
+    {
+      "id": "item.p-649-hel",
+      "name": "P.649 HEL",
+      "category": "equipment",
+      "classification": "licensed-reference-project-adaptation"
+    },
+    {
+      "id": "item.pathogen-containment-projector",
+      "name": "Pathogen Containment Projector",
+      "category": "equipment",
+      "classification": "project-source"
+    },
+    {
+      "id": "item.pathogen-scanner",
+      "name": "Pathogen Scanner",
+      "category": "equipment",
+      "classification": "project-source"
+    },
+    {
+      "id": "item.plasma-rifle",
+      "name": "Plasma Rifle",
+      "category": "equipment",
+      "classification": "project-source"
+    },
+    {
+      "id": "item.portable-battery",
+      "name": "Portable Battery",
+      "category": "equipment",
+      "classification": "project-source"
+    },
+    {
+      "id": "item.portable-quarantine",
+      "name": "Portable Quarantine",
+      "category": "equipment",
+      "classification": "project-source"
+    },
+    {
+      "id": "item.portable-sentry",
+      "name": "Portable Sentry",
+      "category": "equipment",
+      "classification": "project-source"
+    },
+    {
+      "id": "item.ppz-49-vol",
+      "name": "PPZ-49 Vol",
+      "category": "equipment",
+      "classification": "licensed-reference-project-adaptation"
+    },
+    {
+      "id": "item.pressure-suit",
+      "name": "Pressure Suit",
+      "category": "equipment",
+      "classification": "project-source"
+    },
+    {
+      "id": "item.rapid-responder",
+      "name": "Rapid Responder",
+      "category": "equipment",
+      "classification": "licensed-reference-project-adaptation"
+    },
+    {
+      "id": "item.rebreather",
+      "name": "Rebreather",
+      "category": "equipment",
+      "classification": "project-source"
+    },
+    {
+      "id": "item.reef-caster",
+      "name": "Reef Caster",
+      "category": "equipment",
+      "classification": "project-source"
+    },
+    {
+      "id": "item.ripper-acid-projector",
+      "name": "Ripper Acid Projector",
+      "category": "equipment",
+      "classification": "project-source"
+    },
+    {
+      "id": "item.ripper-xenoarmor",
+      "name": "Ripper Xenoarmor",
+      "category": "equipment",
+      "classification": "project-source"
+    },
+    {
+      "id": "item.seismic-surveyor",
+      "name": "Seismic Surveyor",
+      "category": "equipment",
+      "classification": "project-source"
+    },
+    {
+      "id": "item.signal-jammer",
+      "name": "Signal Jammer",
+      "category": "equipment",
+      "classification": "project-source"
+    },
+    {
+      "id": "item.smith-wesson-model-39",
+      "name": "Smith & Wesson Model 39",
+      "category": "equipment",
+      "classification": "world-hive-wars-reference"
+    },
+    {
+      "id": "item.sonic-harpoon",
+      "name": "Sonic Harpoon",
+      "category": "equipment",
+      "classification": "project-source"
+    },
+    {
+      "id": "item.stun-baton",
+      "name": "Stun Baton",
+      "category": "equipment",
+      "classification": "project-source"
+    },
+    {
+      "id": "item.svat-92-sokol",
+      "name": "SVAT-92 Sokol",
+      "category": "equipment",
+      "classification": "licensed-reference-project-adaptation"
+    },
+    {
+      "id": "item.synthetic-repair-kit",
+      "name": "Synthetic Repair Kit",
+      "category": "equipment",
+      "classification": "project-source"
+    },
+    {
+      "id": "item.thunderbolt-mk-2-autocannon",
+      "name": "Thunderbolt Mk.2 Autocannon",
+      "category": "equipment",
+      "classification": "licensed-reference-project-adaptation"
+    },
+    {
+      "id": "item.trauma-kit",
+      "name": "Trauma Kit",
+      "category": "equipment",
+      "classification": "project-source"
+    },
+    {
+      "id": "item.type-21-tactical-shotgun",
+      "name": "Type 21 Tactical Shotgun",
+      "category": "equipment",
+      "classification": "licensed-reference-project-adaptation"
+    },
+    {
+      "id": "item.type-76-auto-shotgun",
+      "name": "Type 76 Auto Shotgun",
+      "category": "equipment",
+      "classification": "licensed-reference-project-adaptation"
+    },
+    {
+      "id": "item.type-88-heavy-assault-rifle",
+      "name": "Type 88 Heavy Assault Rifle",
+      "category": "equipment",
+      "classification": "project-source"
+    },
+    {
+      "id": "item.type-99-incinerator",
+      "name": "Type 99 Incinerator",
+      "category": "equipment",
+      "classification": "licensed-reference-project-adaptation"
+    },
+    {
+      "id": "item.ua-571-c-sentry-gun",
+      "name": "UA 571-C Sentry Gun",
+      "category": "equipment",
+      "classification": "project-source"
+    },
+    {
+      "id": "item.vp70-combat-pistol",
+      "name": "VP70 Combat Pistol",
+      "category": "equipment",
+      "classification": "project-source"
+    },
+    {
+      "id": "item.welding-kit",
+      "name": "Welding Kit",
+      "category": "equipment",
+      "classification": "project-source"
+    },
+    {
+      "id": "item.x45-bombard",
+      "name": "X45 Bombard",
+      "category": "equipment",
+      "classification": "licensed-reference-project-adaptation"
+    },
+    {
+      "id": "item.yautja.acid_solvent",
+      "name": "Dissolving Blue Acid Solvent Flask",
+      "category": "equipment",
+      "classification": "game-source-origin-label-unverified"
+    },
+    {
+      "id": "item.yautja.alpha_sickle",
+      "name": "Alpha Bone Sickle",
+      "category": "equipment",
+      "classification": "game-source-origin-label-unverified"
+    },
+    {
+      "id": "item.yautja.audio_lure",
+      "name": "Audio Lure & Voice Mimicry Module",
+      "category": "equipment",
+      "classification": "game-source-origin-label-unverified"
+    },
+    {
+      "id": "item.yautja.bear_trap",
+      "name": "Yautja Steel Bear Trap",
+      "category": "equipment",
+      "classification": "game-source-origin-label-unverified"
+    },
+    {
+      "id": "item.yautja.broadsword",
+      "name": "Ceremonial Yautja Broadsword",
+      "category": "equipment",
+      "classification": "game-source-origin-label-unverified"
+    },
+    {
+      "id": "item.yautja.burner_rifle",
+      "name": "Burner Plasma Rifle",
+      "category": "equipment",
+      "classification": "game-source-origin-label-unverified"
+    },
+    {
+      "id": "item.yautja.cloak",
+      "name": "Active Camouflage Cloaking Device",
+      "category": "equipment",
+      "classification": "game-source-origin-label-unverified"
+    },
+    {
+      "id": "item.yautja.combistick",
+      "name": "Combi-Stick",
+      "category": "equipment",
+      "classification": "project-source"
+    },
+    {
+      "id": "item.yautja.compound_bow",
+      "name": "Yautja Compound Bow",
+      "category": "equipment",
+      "classification": "game-source-origin-label-unverified"
+    },
+    {
+      "id": "item.yautja.crossbow",
+      "name": "Homing Bolt Crossbow",
+      "category": "equipment",
+      "classification": "game-source-origin-label-unverified"
+    },
+    {
+      "id": "item.yautja.daggers",
+      "name": "Ceremonial Yautja Daggers",
+      "category": "equipment",
+      "classification": "game-source-origin-label-unverified"
+    },
+    {
+      "id": "item.yautja.dual_caster",
+      "name": "Dual Shoulder Plasma Cannons",
+      "category": "equipment",
+      "classification": "game-source-origin-label-unverified"
+    },
+    {
+      "id": "item.yautja.emp_mine",
+      "name": "Sonic EMP Disruption Mine",
+      "category": "equipment",
+      "classification": "game-source-origin-label-unverified"
+    },
+    {
+      "id": "item.yautja.feral_bolt_launcher_2022",
+      "name": "Lance-traits du Feral",
+      "category": "equipment",
+      "classification": "apex-declared-media-reference-review-required"
+    },
+    {
+      "id": "item.yautja.feral_shield",
+      "name": "Feral Shield & Cut Blade",
+      "category": "equipment",
+      "classification": "game-source-origin-label-unverified"
+    },
+    {
+      "id": "item.yautja.gatling_plasma",
+      "name": "Gatling Plasma Heavy Cannon",
+      "category": "equipment",
+      "classification": "game-source-origin-label-unverified"
+    },
+    {
+      "id": "item.yautja.glaive",
+      "name": "Yautja Glaive Spear",
+      "category": "equipment",
+      "classification": "game-source-origin-label-unverified"
+    },
+    {
+      "id": "item.yautja.katana",
+      "name": "Samurai Yautja Katana",
+      "category": "equipment",
+      "classification": "game-source-origin-label-unverified"
+    },
+    {
+      "id": "item.yautja.medicomp",
+      "name": "Medicomp Bio-Gel Injection Kit",
+      "category": "equipment",
+      "classification": "game-source-origin-label-unverified"
+    },
+    {
+      "id": "item.yautja.netgun",
+      "name": "Razor-Wire Netgun",
+      "category": "equipment",
+      "classification": "game-source-origin-label-unverified"
+    },
+    {
+      "id": "item.yautja.nuke_gauntlet",
+      "name": "Tactical Nuke Wrist Computer",
+      "category": "equipment",
+      "classification": "game-source-origin-label-unverified"
+    },
+    {
+      "id": "item.yautja.pirate_hook",
+      "name": "Pirate Arm Hook",
+      "category": "equipment",
+      "classification": "game-source-origin-label-unverified"
+    },
+    {
+      "id": "item.yautja.plasma_caster",
+      "name": "Shoulder Plasma Caster (Single)",
+      "category": "equipment",
+      "classification": "game-source-origin-label-unverified"
+    },
+    {
+      "id": "item.yautja.plasma_mines",
+      "name": "Proximity Plasma Trip-Mines",
+      "category": "equipment",
+      "classification": "game-source-origin-label-unverified"
+    },
+    {
+      "id": "item.yautja.plasma_pistol",
+      "name": "Handheld Plasma Pistol",
+      "category": "equipment",
+      "classification": "game-source-origin-label-unverified"
+    },
+    {
+      "id": "item.yautja.plasma_turret",
+      "name": "Plasma Deployable Sentry Turret",
+      "category": "equipment",
+      "classification": "game-source-origin-label-unverified"
+    },
+    {
+      "id": "item.yautja.plasma_whip",
+      "name": "Vertebrae Plasma Whip",
+      "category": "equipment",
+      "classification": "game-source-origin-label-unverified"
+    },
+    {
+      "id": "item.yautja.self_destruct",
+      "name": "Autodestruction du brassard",
+      "category": "equipment",
+      "classification": "apex-declared-media-reference-review-required"
+    },
+    {
+      "id": "item.yautja.shuriken",
+      "name": "6-Blade Telescopic Shuriken",
+      "category": "equipment",
+      "classification": "game-source-origin-label-unverified"
+    },
+    {
+      "id": "item.yautja.single_scythe",
+      "name": "Extended Single Scythe Wristblade",
+      "category": "equipment",
+      "classification": "game-source-origin-label-unverified"
+    },
+    {
+      "id": "item.yautja.smart_disc",
+      "name": "Smart Disc",
+      "category": "equipment",
+      "classification": "project-source"
+    },
+    {
+      "id": "item.yautja.speargun",
+      "name": "Laser Needle SpearGun",
+      "category": "equipment",
+      "classification": "game-source-origin-label-unverified"
+    },
+    {
+      "id": "item.yautja.super_cleaver",
+      "name": "Super Scythe Arm Cleaver",
+      "category": "equipment",
+      "classification": "game-source-origin-label-unverified"
+    },
+    {
+      "id": "item.yautja.thermal_mask",
+      "name": "Thermal Multi-Vision Bio-Mask",
+      "category": "equipment",
+      "classification": "game-source-origin-label-unverified"
+    },
+    {
+      "id": "item.yautja.tri_laser_targeting",
+      "name": "Viseur à trois points",
+      "category": "equipment",
+      "classification": "apex-declared-media-reference-review-required"
+    },
+    {
+      "id": "item.yautja.tri_maul",
+      "name": "Tri-Blade Maul",
+      "category": "equipment",
+      "classification": "game-source-origin-label-unverified"
+    },
+    {
+      "id": "item.yautja.viking_axe",
+      "name": "Viking Double-Headed Battle Axe",
+      "category": "equipment",
+      "classification": "game-source-origin-label-unverified"
+    },
+    {
+      "id": "item.yautja.war_club",
+      "name": "Bone War Club",
+      "category": "equipment",
+      "classification": "game-source-origin-label-unverified"
+    },
+    {
+      "id": "item.yautja.wolf_dual_plasma_2007",
+      "name": "Double canon à plasma de Wolf",
+      "category": "equipment",
+      "classification": "apex-declared-media-reference-review-required"
+    },
+    {
+      "id": "item.yautja.wrist_computer",
+      "name": "Ordinateur de poignet",
+      "category": "equipment",
+      "classification": "apex-declared-media-reference-review-required"
+    },
+    {
+      "id": "item.yautja.wristblades",
+      "name": "Wrist Blades",
+      "category": "equipment",
+      "classification": "project-source"
+    },
+    {
+      "id": "place.acheron-lv-426",
+      "name": "Acheron / LV-426",
+      "category": "place",
+      "classification": "project-source"
+    },
+    {
+      "id": "place.bg-386",
+      "name": "BG-386",
+      "category": "place",
+      "classification": "project-source"
+    },
+    {
+      "id": "place.capua-vii",
+      "name": "Capua VII",
+      "category": "place",
+      "classification": "project-source"
+    },
+    {
+      "id": "place.ceto",
+      "name": "Ceto",
+      "category": "place",
+      "classification": "project-source"
+    },
+    {
+      "id": "place.echo-basin",
+      "name": "Echo Basin",
+      "category": "place",
+      "classification": "project-source"
+    },
+    {
+      "id": "place.fiorina-161",
+      "name": "Fiorina 161",
+      "category": "place",
+      "classification": "project-source"
+    },
+    {
+      "id": "place.freya-s-prospect",
+      "name": "Freya’s Prospect",
+      "category": "place",
+      "classification": "project-source"
+    },
+    {
+      "id": "place.gateway-station",
+      "name": "Gateway Station",
+      "category": "place",
+      "classification": "project-source"
+    },
+    {
+      "id": "place.jackson-s-star",
+      "name": "Jackson’s Star",
+      "category": "place",
+      "classification": "project-source"
+    },
+    {
+      "id": "place.katanga",
+      "name": "Katanga",
+      "category": "place",
+      "classification": "project-source"
+    },
+    {
+      "id": "place.khepri-forge",
+      "name": "Khepri Forge",
+      "category": "place",
+      "classification": "project-source"
+    },
+    {
+      "id": "place.korari",
+      "name": "Korari",
+      "category": "place",
+      "classification": "project-source"
+    },
+    {
+      "id": "place.lethe",
+      "name": "Lethe",
+      "category": "place",
+      "classification": "project-source"
+    },
+    {
+      "id": "place.lv-1201",
+      "name": "LV-1201",
+      "category": "place",
+      "classification": "project-source"
+    },
+    {
+      "id": "place.lv-223",
+      "name": "LV-223",
+      "category": "place",
+      "classification": "project-source"
+    },
+    {
+      "id": "place.lv-742",
+      "name": "LV-742",
+      "category": "place",
+      "classification": "project-source"
+    },
+    {
+      "id": "place.lv-895",
+      "name": "LV-895",
+      "category": "place",
+      "classification": "project-source"
+    },
+    {
+      "id": "place.mire-9",
+      "name": "MIRE-9",
+      "category": "place",
+      "classification": "project-source"
+    },
+    {
+      "id": "place.nacre-7",
+      "name": "Nacre-7",
+      "category": "place",
+      "classification": "project-source"
+    },
+    {
+      "id": "place.new-albion",
+      "name": "New Albion",
+      "category": "place",
+      "classification": "project-source"
+    },
+    {
+      "id": "place.new-galveston",
+      "name": "New Galveston",
+      "category": "place",
+      "classification": "project-source"
+    },
+    {
+      "id": "place.palimpste",
+      "name": "Palimpste",
+      "category": "place",
+      "classification": "project-source"
+    },
+    {
+      "id": "place.pallas-rift",
+      "name": "Pallas Rift",
+      "category": "place",
+      "classification": "project-source"
+    },
+    {
+      "id": "place.pioneer-station",
+      "name": "Pioneer Station",
+      "category": "place",
+      "classification": "project-source"
+    },
+    {
+      "id": "place.purdan",
+      "name": "Purdan",
+      "category": "place",
+      "classification": "project-source"
+    },
+    {
+      "id": "place.renaissance-station",
+      "name": "Renaissance Station",
+      "category": "place",
+      "classification": "project-source"
+    },
+    {
+      "id": "place.ryushi",
+      "name": "Ryushi",
+      "category": "place",
+      "classification": "project-source"
+    },
+    {
+      "id": "place.sable-meridian",
+      "name": "Sable Meridian",
+      "category": "place",
+      "classification": "project-source"
+    },
+    {
+      "id": "place.sevastopol",
+      "name": "Sevastopol",
+      "category": "place",
+      "classification": "project-source"
+    },
+    {
+      "id": "place.sulaco-drift",
+      "name": "Sulaco Drift",
+      "category": "place",
+      "classification": "project-source"
+    },
+    {
+      "id": "place.uscss-nostromo",
+      "name": "USCSS Nostromo",
+      "category": "place",
+      "classification": "project-source"
+    },
+    {
+      "id": "place.usm-auriga",
+      "name": "USM Auriga",
+      "category": "place",
+      "classification": "project-source"
+    },
+    {
+      "id": "profile.whw.equipment.alien1979-compression-helmet",
+      "name": "Compression Helmet",
+      "category": "source-equipment-profile",
+      "classification": "source-work-documentary-not-automatically-usable"
+    },
+    {
+      "id": "profile.whw.equipment.alien1979-compression-suit",
+      "name": "Compression Suit",
+      "category": "source-equipment-profile",
+      "classification": "source-work-documentary-not-automatically-usable"
+    },
+    {
+      "id": "profile.whw.equipment.alien1979-flamethrower",
+      "name": "Flamethrower — Nostromo",
+      "category": "source-equipment-profile",
+      "classification": "source-work-documentary-not-automatically-usable"
+    },
+    {
+      "id": "profile.whw.equipment.alien1979-flashlight",
+      "name": "Flashlight — Dallas",
+      "category": "source-equipment-profile",
+      "classification": "source-work-documentary-not-automatically-usable"
+    },
+    {
+      "id": "profile.whw.equipment.alien1979-harpoon-gun",
+      "name": "Harpoon Gun — Nostromo",
+      "category": "source-equipment-profile",
+      "classification": "source-work-documentary-not-automatically-usable"
+    },
+    {
+      "id": "profile.whw.equipment.alien1979-pistol",
+      "name": "Pistol — Dallas",
+      "category": "source-equipment-profile",
+      "classification": "source-work-documentary-not-automatically-usable"
+    },
+    {
+      "id": "profile.whw.equipment.aliens1986-ammo-bag",
+      "name": "Ammo Bag",
+      "category": "source-equipment-profile",
+      "classification": "source-work-documentary-not-automatically-usable"
+    },
+    {
+      "id": "profile.whw.equipment.aliens1986-flamethrower",
+      "name": "Flame Thrower",
+      "category": "source-equipment-profile",
+      "classification": "source-work-documentary-not-automatically-usable"
+    },
+    {
+      "id": "profile.whw.equipment.aliens1986-flashlight",
+      "name": "Flashlight",
+      "category": "source-equipment-profile",
+      "classification": "source-work-documentary-not-automatically-usable"
+    },
+    {
+      "id": "profile.whw.equipment.aliens1986-headset",
+      "name": "Headset",
+      "category": "source-equipment-profile",
+      "classification": "source-work-documentary-not-automatically-usable"
+    },
+    {
+      "id": "profile.whw.equipment.aliens1986-helmet",
+      "name": "Helmet",
+      "category": "source-equipment-profile",
+      "classification": "source-work-documentary-not-automatically-usable"
+    },
+    {
+      "id": "profile.whw.equipment.aliens1986-knife",
+      "name": "Knife",
+      "category": "source-equipment-profile",
+      "classification": "source-work-documentary-not-automatically-usable"
+    },
+    {
+      "id": "profile.whw.equipment.aliens1986-laptop",
+      "name": "Sentry Laptop",
+      "category": "source-equipment-profile",
+      "classification": "source-work-documentary-not-automatically-usable"
+    },
+    {
+      "id": "profile.whw.equipment.aliens1986-motion-detector",
+      "name": "Motion Detector",
+      "category": "source-equipment-profile",
+      "classification": "source-work-documentary-not-automatically-usable"
+    },
+    {
+      "id": "profile.whw.equipment.aliens1986-pistol",
+      "name": "Pistol",
+      "category": "source-equipment-profile",
+      "classification": "source-work-documentary-not-automatically-usable"
+    },
+    {
+      "id": "profile.whw.equipment.aliens1986-pulse-rifle",
+      "name": "Pulse Rifle",
+      "category": "source-equipment-profile",
+      "classification": "source-work-documentary-not-automatically-usable"
+    },
+    {
+      "id": "profile.whw.equipment.aliens1986-sentry-gun",
+      "name": "Sentry Gun",
+      "category": "source-equipment-profile",
+      "classification": "source-work-documentary-not-automatically-usable"
+    },
+    {
+      "id": "profile.whw.equipment.aliens1986-shotgun",
+      "name": "Shotgun",
+      "category": "source-equipment-profile",
+      "classification": "source-work-documentary-not-automatically-usable"
+    },
+    {
+      "id": "profile.whw.equipment.aliens1986-shoulder-lamp",
+      "name": "Shoulder Lamp",
+      "category": "source-equipment-profile",
+      "classification": "source-work-documentary-not-automatically-usable"
+    },
+    {
+      "id": "profile.whw.equipment.aliens1986-smartgun",
+      "name": "Smartgun — Vasquez",
+      "category": "source-equipment-profile",
+      "classification": "source-work-documentary-not-automatically-usable"
+    },
+    {
+      "id": "profile.whw.equipment.aliens1986-smartgun-harness",
+      "name": "Smartgun Harness",
+      "category": "source-equipment-profile",
+      "classification": "source-work-documentary-not-automatically-usable"
+    },
+    {
+      "id": "profile.whw.equipment.aliens1986-vasquez-pistol",
+      "name": "Pistol — Vasquez",
+      "category": "source-equipment-profile",
+      "classification": "source-work-documentary-not-automatically-usable"
+    },
+    {
+      "id": "profile.whw.equipment.aliens1986-welding-torch",
+      "name": "Welding Torch",
+      "category": "source-equipment-profile",
+      "classification": "source-work-documentary-not-automatically-usable"
+    },
+    {
+      "id": "profile.whw.equipment.dd-black-camo-armor-set",
+      "name": "Black Camo Armor Set",
+      "category": "source-equipment-profile",
+      "classification": "source-work-documentary-not-automatically-usable"
+    },
+    {
+      "id": "profile.whw.equipment.dd-cryopod",
+      "name": "Cryopod — opening cinematics",
+      "category": "source-equipment-profile",
+      "classification": "source-work-documentary-not-automatically-usable"
+    },
+    {
+      "id": "profile.whw.equipment.dd-motion-tracker",
+      "name": "Motion Tracker",
+      "category": "source-equipment-profile",
+      "classification": "source-work-documentary-not-automatically-usable"
+    },
+    {
+      "id": "profile.whw.equipment.dd-pulse-rifle",
+      "name": "Pulse Rifle — cinematic prop",
+      "category": "source-equipment-profile",
+      "classification": "source-work-documentary-not-automatically-usable"
+    },
+    {
+      "id": "profile.whw.equipment.dd-rpg",
+      "name": "RPG",
+      "category": "source-equipment-profile",
+      "classification": "source-work-documentary-not-automatically-usable"
+    },
+    {
+      "id": "profile.whw.equipment.dd-service-pistol",
+      "name": "Service Pistol",
+      "category": "source-equipment-profile",
+      "classification": "source-work-documentary-not-automatically-usable"
+    },
+    {
+      "id": "profile.whw.equipment.dd-sniper-rifle",
+      "name": "Sniper Rifle",
+      "category": "source-equipment-profile",
+      "classification": "source-work-documentary-not-automatically-usable"
+    },
+    {
+      "id": "profile.whw.equipment.dd-sniper-silencer",
+      "name": "Sniper Silencer",
+      "category": "source-equipment-profile",
+      "classification": "source-work-documentary-not-automatically-usable"
+    },
+    {
+      "id": "profile.whw.equipment.dd-synthetic-stun-baton",
+      "name": "Stun Baton — synthetics",
+      "category": "source-equipment-profile",
+      "classification": "source-work-documentary-not-automatically-usable"
+    },
+    {
+      "id": "profile.whw.equipment.earth-transition-table",
+      "name": "Transition Table",
+      "category": "source-equipment-profile",
+      "classification": "source-work-documentary-not-automatically-usable"
+    },
+    {
+      "id": "profile.whw.equipment.isolation-backpack",
+      "name": "Backpack · accessoire Amanda",
+      "category": "source-equipment-profile",
+      "classification": "source-work-documentary-not-automatically-usable"
+    },
+    {
+      "id": "profile.whw.equipment.isolation-bolt-gun",
+      "name": "Bolt Gun",
+      "category": "source-equipment-profile",
+      "classification": "source-work-documentary-not-automatically-usable"
+    },
+    {
+      "id": "profile.whw.equipment.isolation-emp-mine",
+      "name": "EMP Mine",
+      "category": "source-equipment-profile",
+      "classification": "source-work-documentary-not-automatically-usable"
+    },
+    {
+      "id": "profile.whw.equipment.isolation-flamethrower",
+      "name": "Flamethrower",
+      "category": "source-equipment-profile",
+      "classification": "source-work-documentary-not-automatically-usable"
+    },
+    {
+      "id": "profile.whw.equipment.isolation-flare",
+      "name": "Flare",
+      "category": "source-equipment-profile",
+      "classification": "source-work-documentary-not-automatically-usable"
+    },
+    {
+      "id": "profile.whw.equipment.isolation-flashbang",
+      "name": "Flashbang",
+      "category": "source-equipment-profile",
+      "classification": "source-work-documentary-not-automatically-usable"
+    },
+    {
+      "id": "profile.whw.equipment.isolation-flashlight",
+      "name": "Flashlight",
+      "category": "source-equipment-profile",
+      "classification": "source-work-documentary-not-automatically-usable"
+    },
+    {
+      "id": "profile.whw.equipment.isolation-gas-torch",
+      "name": "Gas Torch",
+      "category": "source-equipment-profile",
+      "classification": "source-work-documentary-not-automatically-usable"
+    },
+    {
+      "id": "profile.whw.equipment.isolation-ion-torch",
+      "name": "Ion Torch",
+      "category": "source-equipment-profile",
+      "classification": "source-work-documentary-not-automatically-usable"
+    },
+    {
+      "id": "profile.whw.equipment.isolation-maintenance-jack",
+      "name": "Maintenance Jack",
+      "category": "source-equipment-profile",
+      "classification": "source-work-documentary-not-automatically-usable"
+    },
+    {
+      "id": "profile.whw.equipment.isolation-medikit",
+      "name": "Medikit",
+      "category": "source-equipment-profile",
+      "classification": "source-work-documentary-not-automatically-usable"
+    },
+    {
+      "id": "profile.whw.equipment.isolation-molotov",
+      "name": "Molotov",
+      "category": "source-equipment-profile",
+      "classification": "source-work-documentary-not-automatically-usable"
+    },
+    {
+      "id": "profile.whw.equipment.isolation-motion-tracker",
+      "name": "Motion Tracker",
+      "category": "source-equipment-profile",
+      "classification": "source-work-documentary-not-automatically-usable"
+    },
+    {
+      "id": "profile.whw.equipment.isolation-noisemaker",
+      "name": "Noisemaker",
+      "category": "source-equipment-profile",
+      "classification": "source-work-documentary-not-automatically-usable"
+    },
+    {
+      "id": "profile.whw.equipment.isolation-pipe-bomb",
+      "name": "Pipe Bomb",
+      "category": "source-equipment-profile",
+      "classification": "source-work-documentary-not-automatically-usable"
+    },
+    {
+      "id": "profile.whw.equipment.isolation-plasma-torch",
+      "name": "Plasma Torch",
+      "category": "source-equipment-profile",
+      "classification": "source-work-documentary-not-automatically-usable"
+    },
+    {
+      "id": "profile.whw.equipment.isolation-revolver",
+      "name": "Revolver",
+      "category": "source-equipment-profile",
+      "classification": "source-work-documentary-not-automatically-usable"
+    },
+    {
+      "id": "profile.whw.equipment.isolation-security-access-tuner",
+      "name": "Security Access Tuner",
+      "category": "source-equipment-profile",
+      "classification": "source-work-documentary-not-automatically-usable"
+    },
+    {
+      "id": "profile.whw.equipment.isolation-shotgun",
+      "name": "Shotgun",
+      "category": "source-equipment-profile",
+      "classification": "source-work-documentary-not-automatically-usable"
+    },
+    {
+      "id": "profile.whw.equipment.isolation-smoke-bomb",
+      "name": "Smokebomb",
+      "category": "source-equipment-profile",
+      "classification": "source-work-documentary-not-automatically-usable"
+    },
+    {
+      "id": "profile.whw.equipment.isolation-stun-baton",
+      "name": "Stun Baton",
+      "category": "source-equipment-profile",
+      "classification": "source-work-documentary-not-automatically-usable"
+    },
+    {
+      "id": "profile.whw.equipment.prometheus-david8-helmet",
+      "name": "David8 Helmet",
+      "category": "source-equipment-profile",
+      "classification": "source-work-documentary-not-automatically-usable"
+    },
+    {
+      "id": "profile.whw.equipment.resurrection-draco-double-burner",
+      "name": "Draco Double Burner",
+      "category": "source-equipment-profile",
+      "classification": "source-work-documentary-not-automatically-usable"
+    },
+    {
+      "id": "profile.whw.equipment.resurrection-lacrima99-shockrifle",
+      "name": "Lacrima 99 Shockrifle",
+      "category": "source-equipment-profile",
+      "classification": "source-work-documentary-not-automatically-usable"
+    },
+    {
+      "id": "profile.whw.equipment.romulus-airlock-door-opener",
+      "name": "Airlock Door Opener",
+      "category": "source-equipment-profile",
+      "classification": "source-work-documentary-not-automatically-usable"
+    },
+    {
+      "id": "profile.whw.equipment.romulus-body-heat-temp-meter",
+      "name": "Body Heat Temp Meter",
+      "category": "source-equipment-profile",
+      "classification": "source-work-documentary-not-automatically-usable"
+    },
+    {
+      "id": "profile.whw.equipment.romulus-cryoframe",
+      "name": "Cryo Frame",
+      "category": "source-equipment-profile",
+      "classification": "source-work-documentary-not-automatically-usable"
+    },
+    {
+      "id": "profile.whw.equipment.romulus-door-opener",
+      "name": "Door Opener",
+      "category": "source-equipment-profile",
+      "classification": "source-work-documentary-not-automatically-usable"
+    },
+    {
+      "id": "profile.whw.equipment.romulus-f44aa",
+      "name": "F44AA Pulse Rifle",
+      "category": "source-equipment-profile",
+      "classification": "source-work-documentary-not-automatically-usable"
+    },
+    {
+      "id": "profile.whw.equipment.romulus-laser",
+      "name": "Laser",
+      "category": "source-equipment-profile",
+      "classification": "source-work-documentary-not-automatically-usable"
+    },
+    {
+      "id": "profile.whw.equipment.romulus-meteor-holder",
+      "name": "Meteor Holder",
+      "category": "source-equipment-profile",
+      "classification": "source-work-documentary-not-automatically-usable"
+    },
+    {
+      "id": "profile.whw.equipment.romulus-microphone",
+      "name": "Microphone",
+      "category": "source-equipment-profile",
+      "classification": "source-work-documentary-not-automatically-usable"
+    },
+    {
+      "id": "profile.whw.equipment.romulus-taser",
+      "name": "Taser",
+      "category": "source-equipment-profile",
+      "classification": "source-work-documentary-not-automatically-usable"
+    },
+    {
+      "id": "profile.whw.equipment.romulus-temperature-scanner",
+      "name": "Temperature Scanner",
+      "category": "source-equipment-profile",
+      "classification": "source-work-documentary-not-automatically-usable"
+    },
+    {
+      "id": "profile.whw.equipment.romulus-xray-torch",
+      "name": "X Ray Torch",
+      "category": "source-equipment-profile",
+      "classification": "source-work-documentary-not-automatically-usable"
+    },
+    {
+      "id": "profile.whw.extended.acm-boiler",
+      "name": "Boiler — Colonial Marines",
+      "category": "source-profile",
+      "classification": "licensed-or-project-work-scoped-profile-not-universal-caste"
+    },
+    {
+      "id": "profile.whw.extended.acm-crusher",
+      "name": "Crusher — Colonial Marines",
+      "category": "source-profile",
+      "classification": "licensed-or-project-work-scoped-profile-not-universal-caste"
+    },
+    {
+      "id": "profile.whw.extended.acm-lurker",
+      "name": "Lurker — Colonial Marines",
+      "category": "source-profile",
+      "classification": "licensed-or-project-work-scoped-profile-not-universal-caste"
+    },
+    {
+      "id": "profile.whw.extended.acm-queen",
+      "name": "Reine — Colonial Marines",
+      "category": "source-profile",
+      "classification": "licensed-or-project-work-scoped-profile-not-universal-caste"
+    },
+    {
+      "id": "profile.whw.extended.acm-raven",
+      "name": "Raven — Colonial Marines",
+      "category": "source-profile",
+      "classification": "licensed-or-project-work-scoped-profile-not-universal-caste"
+    },
+    {
+      "id": "profile.whw.extended.acm-spitter",
+      "name": "Spitter — Colonial Marines",
+      "category": "source-profile",
+      "classification": "licensed-or-project-work-scoped-profile-not-universal-caste"
+    },
+    {
+      "id": "profile.whw.extended.ari-facehugger",
+      "name": "Facehugger — Rogue Incursion",
+      "category": "source-profile",
+      "classification": "licensed-or-project-work-scoped-profile-not-universal-caste"
+    },
+    {
+      "id": "profile.whw.extended.burster",
+      "name": "Burster — Fireteam Elite",
+      "category": "source-profile",
+      "classification": "licensed-or-project-work-scoped-profile-not-universal-caste"
+    },
+    {
+      "id": "profile.whw.extended.covenant-xenomorph",
+      "name": "Xénomorphe — Alien: Covenant",
+      "category": "source-profile",
+      "classification": "licensed-or-project-work-scoped-profile-not-universal-caste"
+    },
+    {
+      "id": "profile.whw.extended.crusher",
+      "name": "Crusher — Fireteam Elite",
+      "category": "source-profile",
+      "classification": "licensed-or-project-work-scoped-profile-not-universal-caste"
+    },
+    {
+      "id": "profile.whw.extended.dark-descent-praetorian",
+      "name": "Prétorien — Dark Descent",
+      "category": "source-profile",
+      "classification": "licensed-or-project-work-scoped-profile-not-universal-caste"
+    },
+    {
+      "id": "profile.whw.extended.deacon",
+      "name": "Deacon — Prometheus",
+      "category": "source-profile",
+      "classification": "licensed-or-project-work-scoped-profile-not-universal-caste"
+    },
+    {
+      "id": "profile.whw.extended.fireteam-queen",
+      "name": "Reine — Fireteam Elite",
+      "category": "source-profile",
+      "classification": "licensed-or-project-work-scoped-profile-not-universal-caste"
+    },
+    {
+      "id": "profile.whw.extended.fireteam-runner",
+      "name": "Runner — Fireteam Elite",
+      "category": "source-profile",
+      "classification": "licensed-or-project-work-scoped-profile-not-universal-caste"
+    },
+    {
+      "id": "profile.whw.extended.kenner-scorpion",
+      "name": "Scorpion Alien — Kenner / NECA",
+      "category": "source-profile",
+      "classification": "licensed-or-project-work-scoped-profile-not-universal-caste"
+    },
+    {
+      "id": "profile.whw.extended.kenner-snake",
+      "name": "Snake Alien — Kenner / NECA",
+      "category": "source-profile",
+      "classification": "licensed-or-project-work-scoped-profile-not-universal-caste"
+    },
+    {
+      "id": "profile.whw.extended.neomorph",
+      "name": "Neomorph — Alien: Covenant",
+      "category": "source-profile",
+      "classification": "licensed-or-project-work-scoped-profile-not-universal-caste"
+    },
+    {
+      "id": "profile.whw.extended.newborn",
+      "name": "Newborn — Alien Resurrection",
+      "category": "source-profile",
+      "classification": "licensed-or-project-work-scoped-profile-not-universal-caste"
+    },
+    {
+      "id": "profile.whw.extended.pathogen-brute",
+      "name": "Pathogen Brute",
+      "category": "source-profile",
+      "classification": "licensed-or-project-work-scoped-profile-not-universal-caste"
+    },
+    {
+      "id": "profile.whw.extended.pathogen-runner",
+      "name": "Pathogen Runner",
+      "category": "source-profile",
+      "classification": "licensed-or-project-work-scoped-profile-not-universal-caste"
+    },
+    {
+      "id": "profile.whw.extended.praetorian",
+      "name": "Prétorien — Fireteam Elite",
+      "category": "source-profile",
+      "classification": "licensed-or-project-work-scoped-profile-not-universal-caste"
+    },
+    {
+      "id": "profile.whw.extended.predalien",
+      "name": "Predalien — AVP: Requiem",
+      "category": "source-profile",
+      "classification": "licensed-or-project-work-scoped-profile-not-universal-caste"
+    },
+    {
+      "id": "profile.whw.extended.prowler",
+      "name": "Prowler — Fireteam Elite",
+      "category": "source-profile",
+      "classification": "licensed-or-project-work-scoped-profile-not-universal-caste"
+    },
+    {
+      "id": "profile.whw.extended.queen-aliens",
+      "name": "Reine — Aliens",
+      "category": "source-profile",
+      "classification": "licensed-or-project-work-scoped-profile-not-universal-caste"
+    },
+    {
+      "id": "profile.whw.extended.runner",
+      "name": "Runner — Alien 3",
+      "category": "source-profile",
+      "classification": "licensed-or-project-work-scoped-profile-not-universal-caste"
+    },
+    {
+      "id": "profile.whw.extended.spitter",
+      "name": "Spitter — Fireteam Elite",
+      "category": "source-profile",
+      "classification": "licensed-or-project-work-scoped-profile-not-universal-caste"
+    },
+    {
+      "id": "vehicle.ad-19d-bearcat-vtol-strikeship",
+      "name": "AD-19D Bearcat VTOL Strikeship",
+      "category": "vehicle",
+      "classification": "project-source"
+    },
+    {
+      "id": "vehicle.atmospheric-processor-elevator",
+      "name": "Atmospheric Processor Elevator",
+      "category": "vehicle",
+      "classification": "project-source"
+    },
+    {
+      "id": "vehicle.audi-lunar-quattro",
+      "name": "Audi lunar quattro",
+      "category": "vehicle",
+      "classification": "licensed-reference-project-adaptation"
+    },
+    {
+      "id": "vehicle.ceto-patrol-boat",
+      "name": "Ceto Patrol Boat",
+      "category": "vehicle",
+      "classification": "project-source"
+    },
+    {
+      "id": "vehicle.colony-cargo-lifter",
+      "name": "Colony Cargo Lifter",
+      "category": "vehicle",
+      "classification": "project-source"
+    },
+    {
+      "id": "vehicle.combat-power-loader",
+      "name": "Combat Power Loader",
+      "category": "vehicle",
+      "classification": "project-source"
+    },
+    {
+      "id": "vehicle.crucible-caravan-crawler",
+      "name": "Crucible Caravan Crawler",
+      "category": "vehicle",
+      "classification": "project-source"
+    },
+    {
+      "id": "vehicle.daihotai-tractor-colony-tractor",
+      "name": "Daihotai Tractor / Colony Tractor",
+      "category": "vehicle",
+      "classification": "project-source"
+    },
+    {
+      "id": "vehicle.echo-9-recon-bike",
+      "name": "Echo-9 Recon Bike",
+      "category": "vehicle",
+      "classification": "project-source"
+    },
+    {
+      "id": "vehicle.hyperdyne-synthetic-carrier",
+      "name": "Hyperdyne Synthetic Carrier",
+      "category": "vehicle",
+      "classification": "project-source"
+    },
+    {
+      "id": "vehicle.ice-driller",
+      "name": "Ice Driller",
+      "category": "vehicle",
+      "classification": "project-source"
+    },
+    {
+      "id": "vehicle.lander-one-class-e-lander-type-drop-shuttle",
+      "name": "Lander One - Class E Lander-Type Drop Shuttle",
+      "category": "vehicle",
+      "classification": "project-source"
+    },
+    {
+      "id": "vehicle.m22a3-jackson-tank",
+      "name": "M22A3 Jackson Tank",
+      "category": "vehicle",
+      "classification": "project-source"
+    },
+    {
+      "id": "vehicle.m292-self-propelled-artillery",
+      "name": "M292 Self-Propelled Artillery",
+      "category": "vehicle",
+      "classification": "project-source"
+    },
+    {
+      "id": "vehicle.m40-ridgeway-heavy-tank",
+      "name": "M40 Ridgeway Heavy Tank",
+      "category": "vehicle",
+      "classification": "project-source"
+    },
+    {
+      "id": "vehicle.m570-series-apc",
+      "name": "M570 Series APC",
+      "category": "vehicle",
+      "classification": "project-source"
+    },
+    {
+      "id": "vehicle.m577-armored-personnel-carrier",
+      "name": "M577 Armored Personnel Carrier",
+      "category": "vehicle",
+      "classification": "project-source"
+    },
+    {
+      "id": "vehicle.m577-command-apc",
+      "name": "M577 Command APC",
+      "category": "vehicle",
+      "classification": "project-source"
+    },
+    {
+      "id": "vehicle.m579-daisycutter",
+      "name": "M579 Daisycutter",
+      "category": "vehicle",
+      "classification": "licensed-reference-project-adaptation"
+    },
+    {
+      "id": "vehicle.maglev-personnel-car",
+      "name": "Maglev Personnel Car",
+      "category": "vehicle",
+      "classification": "project-source"
+    },
+    {
+      "id": "vehicle.mining-bore-crawler",
+      "name": "Mining Bore Crawler",
+      "category": "vehicle",
+      "classification": "project-source"
+    },
+    {
+      "id": "vehicle.narcissus-nostromo-lifeboat",
+      "name": "Narcissus - Nostromo Lifeboat",
+      "category": "vehicle",
+      "classification": "project-source"
+    },
+    {
+      "id": "vehicle.neuro-xeno-transport-rig",
+      "name": "Neuro-Xeno Transport Rig",
+      "category": "vehicle",
+      "classification": "project-source"
+    },
+    {
+      "id": "vehicle.nr-9-series-all-terrain-vehicle-euv01",
+      "name": "NR-9 Series All Terrain Vehicle / EUV01",
+      "category": "vehicle",
+      "classification": "project-source"
+    },
+    {
+      "id": "vehicle.orbital-lifeboat",
+      "name": "Orbital Lifeboat",
+      "category": "vehicle",
+      "classification": "project-source"
+    },
+    {
+      "id": "vehicle.p-5000-powered-work-loader",
+      "name": "P-5000 Powered Work Loader",
+      "category": "vehicle",
+      "classification": "project-source"
+    },
+    {
+      "id": "vehicle.reef-hydrofoil",
+      "name": "Reef Hydrofoil",
+      "category": "vehicle",
+      "classification": "project-source"
+    },
+    {
+      "id": "vehicle.ripper-siege-loader",
+      "name": "Ripper Siege Loader",
+      "category": "vehicle",
+      "classification": "project-source"
+    },
+    {
+      "id": "vehicle.rt-series-group-transport-rt01",
+      "name": "RT Series Group Transport / RT01",
+      "category": "vehicle",
+      "classification": "project-source"
+    },
+    {
+      "id": "vehicle.seegson-maintenance-tram",
+      "name": "Seegson Maintenance Tram",
+      "category": "vehicle",
+      "classification": "project-source"
+    },
+    {
+      "id": "vehicle.tantalus-command-skiff",
+      "name": "Tantalus Command Skiff",
+      "category": "vehicle",
+      "classification": "project-source"
+    },
+    {
+      "id": "vehicle.ua-571-remote-sentry-carrier",
+      "name": "UA-571 Remote Sentry Carrier",
+      "category": "vehicle",
+      "classification": "project-source"
+    },
+    {
+      "id": "vehicle.ua-northridge-ud-4b-cheyenne",
+      "name": "UA Northridge UD-4B Cheyenne",
+      "category": "vehicle",
+      "classification": "project-source"
+    },
+    {
+      "id": "vehicle.ud-4l-cheyenne-dropship",
+      "name": "UD-4L Cheyenne Dropship",
+      "category": "vehicle",
+      "classification": "project-source"
+    },
+    {
+      "id": "vehicle.upp-combat-aerodyne",
+      "name": "UPP Combat Aerodyne",
+      "category": "vehicle",
+      "classification": "project-source"
+    },
+    {
+      "id": "vehicle.uscm-assault-gunship",
+      "name": "USCM Assault Gunship",
+      "category": "vehicle",
+      "classification": "project-source"
+    },
+    {
+      "id": "vehicle.weyland-eva-7c-series-pressure-pod",
+      "name": "Weyland EVA-7C Series Pressure Pod",
+      "category": "vehicle",
+      "classification": "project-source"
+    },
+    {
+      "id": "vehicle.weyland-yutani-executive-shuttle",
+      "name": "Weyland-Yutani Executive Shuttle",
+      "category": "vehicle",
+      "classification": "project-source"
+    },
+    {
+      "id": "vehicle.yautja.city_clan_vessel_1990",
+      "name": "Vaisseau du clan de Los Angeles",
+      "category": "vehicle",
+      "classification": "apex-declared-media-reference-review-required"
+    },
+    {
+      "id": "vehicle.yautja.jungle_dropcraft_1987",
+      "name": "Appareil d’insertion de la jungle",
+      "category": "vehicle",
+      "classification": "apex-declared-media-reference-review-required"
+    }
+  ]
+}
