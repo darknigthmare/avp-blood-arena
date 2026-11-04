@@ -17,4 +17,7 @@ for(const e of [...data.profiles,...data.unresolved]){
 for(const e of data.profiles){if(!e.identityId||!e.identityName||!e.qualifier||!Array.isArray(e.sources))throw Error('unverifiable identity '+e.localId);for(const s of e.sources)if(!s.repository||!s.path||!s.blobSha)throw Error('source ref incomplete '+e.localId);}
 for(const e of data.unresolved)if(!e.reason||e.reason.length<20)throw Error('unresolved reason missing '+e.localId);
 if(data.historicalBuild.completeSourceImported!==false||data.historicalBuild.hashVerified!==false)throw Error('historical original falsely declared restored');
+if(data.registry?.entityCount!==652||data.registry?.documentaryCount!==494||data.registry?.gameCards!==158||data.registry?.aliasCount!==1679)throw Error('unified registry v2 metadata drift');
+if(!/^[a-f0-9]{40}$/.test(data.registry.entityBlobSha)||data.registry.sourceStatus!=='unmerged-unified-registry-preview')throw Error('unverified registry provenance');
+if(data.profiles.some(e=>new Set(e.sources.map(s=>s.repository+'|'+s.path+'|'+s.blobSha)).size!==e.sources.length))throw Error('duplicate source references');
 console.log('OK unified bridge: '+data.counts.linked+' linked, '+data.counts.unresolved+' unresolved, '+data.counts.total+' profiles.');

@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "node --check game.js && node scripts/check.mjs && node scripts/check-dom.mjs && node scripts/check-unified.mjs && node scripts/check-restore.mjs",
+    "test": "node --check game.js && node scripts/check.mjs && node scripts/check-dom.mjs && node scripts/check-unified.mjs && node scripts/check-registry-index.mjs && node scripts/check-restore.mjs",
     "restore:original": "node scripts/restore-original.mjs"
   }
 }
